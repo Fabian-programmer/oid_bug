@@ -1,0 +1,1239 @@
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (75) LaunchOptions{\"name\":\"OID TEST\",\"type\":\"cppdbg\",\"request\":\"launch\",\"program\":\"/home/hfu5fe/oid_bug/oid_bug\",\"stopAtEntry\":false,\"cwd\":\"/home/hfu5fe/oid_bug\",\"MIMode\":\"gdb\",\"environment\":[],\"setupCommands\":[{\"description\":\"Enable pretty-printing for gdb\",\"text\":\"-enable-pretty-printing\",\"ignoreFailures\":true},{\"description\":\"Set Disassembly Flavor to Intel\",\"text\":\"-gdb-set disassembly-flavor intel\",\"ignoreFailures\":true}],\"logging\":{\"trace\":true,\"traceResponse\":true,\"engineLogging\":true},\"__configurationTarget\":6,\"__sessionId\":\"c16f3d1b-63cd-4cd4-8e67-0c9a5825faa4\"}\n"},"seq":2}
+1: (75) LaunchOptions{"name":"OID TEST","type":"cppdbg","request":"launch","program":"/home/hfu5fe/oid_bug/oid_bug","stopAtEntry":false,"cwd":"/home/hfu5fe/oid_bug","MIMode":"gdb","environment":[],"setupCommands":[{"description":"Enable pretty-printing for gdb","text":"-enable-pretty-printing","ignoreFailures":true},{"description":"Set Disassembly Flavor to Intel","text":"-gdb-set disassembly-flavor intel","ignoreFailures":true}],"logging":{"trace":true,"traceResponse":true,"engineLogging":true},"__configurationTarget":6,"__sessionId":"c16f3d1b-63cd-4cd4-8e67-0c9a5825faa4"}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (129) DbgCmd:echo $$ > /tmp/Microsoft-MIEngine-Pid-nyoob2zk.oo0 ; cd \"/home/hfu5fe/oid_bug\" ; DbgTerm=`tty` ; set -o monitor ; trap 'rm \"/tmp/Microsoft-MIEngine-In-5zsq4lwq.anx\" \"/tmp/Microsoft-MIEngine-Out-sx22snmo.hek\" \"/tmp/Microsoft-MIEngine-Pid-nyoob2zk.oo0\" \"/tmp/Microsoft-MIEngine-Cmd-hint0qhm.eao\"' EXIT ; \"/usr/bin/gdb\" --interpreter=mi --tty=$DbgTerm < \"/tmp/Microsoft-MIEngine-In-5zsq4lwq.anx\" > \"/tmp/Microsoft-MIEngine-Out-sx22snmo.hek\" & clear; pid=$! ; echo $pid > \"/tmp/Microsoft-MIEngine-Pid-nyoob2zk.oo0\" ; wait $pid; \n"},"seq":4}
+1: (129) DbgCmd:echo $$ > /tmp/Microsoft-MIEngine-Pid-nyoob2zk.oo0 ; cd "/home/hfu5fe/oid_bug" ; DbgTerm=`tty` ; set -o monitor ; trap 'rm "/tmp/Microsoft-MIEngine-In-5zsq4lwq.anx" "/tmp/Microsoft-MIEngine-Out-sx22snmo.hek" "/tmp/Microsoft-MIEngine-Pid-nyoob2zk.oo0" "/tmp/Microsoft-MIEngine-Cmd-hint0qhm.eao"' EXIT ; "/usr/bin/gdb" --interpreter=mi --tty=$DbgTerm < "/tmp/Microsoft-MIEngine-In-5zsq4lwq.anx" > "/tmp/Microsoft-MIEngine-Out-sx22snmo.hek" & clear; pid=$! ; echo $pid > "/tmp/Microsoft-MIEngine-Pid-nyoob2zk.oo0" ; wait $pid;
+--> C (runInTerminal-6): {"type":"request","command":"runInTerminal","arguments":{"kind":"integrated","title":"cppdbg: oid_bug","cwd":"","args":["/bin/sh","/tmp/Microsoft-MIEngine-Cmd-hint0qhm.eao"],"env":{}},"seq":6}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (143) Wait for connection completion.\n"},"seq":8}
+1: (143) Wait for connection completion.
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1301) ->=thread-group-added,id=\"i1\"\n"},"seq":10}
+1: (1301) ->=thread-group-added,id="i1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1303) ->~\"GNU gdb (Ubuntu 9.2-0ubuntu1~20.04.1) 9.2\\n\"\n"},"seq":12}
+1: (1303) ->~"GNU gdb (Ubuntu 9.2-0ubuntu1~20.04.1) 9.2\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1303) ->~\"Copyright (C) 2020 Free Software Foundation, Inc.\\n\"\n"},"seq":14}
+1: (1303) ->~"Copyright (C) 2020 Free Software Foundation, Inc.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1303) ->~\"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\\nThis is free software: you are free to change and redistribute it.\\nThere is NO WARRANTY, to the extent permitted by law.\"\n"},"seq":16}
+1: (1303) ->~"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law."
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1303) ->~\"\\nType \\\"show copying\\\" and \\\"show warranty\\\" for details.\\n\"\n"},"seq":18}
+1: (1303) ->~"\nType \"show copying\" and \"show warranty\" for details.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1303) ->~\"This GDB was configured as \\\"x86_64-linux-gnu\\\".\\n\"\n"},"seq":20}
+1: (1303) ->~"This GDB was configured as \"x86_64-linux-gnu\".\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1303) ->~\"Type \\\"show configuration\\\" for configuration details.\\n\"\n"},"seq":22}
+1: (1303) ->~"Type \"show configuration\" for configuration details.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1303) ->~\"For bug reporting instructions, please see:\\n\"\n"},"seq":24}
+1: (1303) ->~"For bug reporting instructions, please see:\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1304) ->~\"<http://www.gnu.org/software/gdb/bugs/>.\\n\"\n"},"seq":26}
+1: (1304) ->~"<http://www.gnu.org/software/gdb/bugs/>.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1304) ->~\"Find the GDB manual and other documentation resources online at:\\n    <http://www.gnu.org/software/gdb/documentation/>.\"\n"},"seq":28}
+1: (1304) ->~"Find the GDB manual and other documentation resources online at:\n    <http://www.gnu.org/software/gdb/documentation/>."
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1304) ->~\"\\n\\n\"\n"},"seq":30}
+1: (1304) ->~"\n\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1304) ->~\"For help, type \\\"help\\\".\\n\"\n"},"seq":32}
+1: (1304) ->~"For help, type \"help\".\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1304) ->~\"Type \\\"apropos word\\\" to search for commands related to \\\"word\\\".\\n\"\n"},"seq":34}
+1: (1304) ->~"Type \"apropos word\" to search for commands related to \"word\".\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1330) ->~\"[OpenImageDebugger] Info: Could not activate hooks for any IDEs\\n\"\n"},"seq":36}
+1: (1330) ->~"[OpenImageDebugger] Info: Could not activate hooks for any IDEs\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1331) ->~\"File(s) /usr/include/c++/9/bits/*.h will be skipped when stepping.\\n\"\n"},"seq":38}
+1: (1331) ->~"File(s) /usr/include/c++/9/bits/*.h will be skipped when stepping.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1331) ->~\"File(s) catch2/* will be skipped when stepping.\\n\"\n"},"seq":40}
+1: (1331) ->~"File(s) catch2/* will be skipped when stepping.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1332) ->~\"File(s) vfc/core/* will be skipped when stepping.\\n\"\n"},"seq":42}
+1: (1332) ->~"File(s) vfc/core/* will be skipped when stepping.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1332) ->(gdb)\n"},"seq":44}
+1: (1332) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1335) <-1001-gdb-set mi-async on\n"},"seq":46}
+1: (1335) <-1001-gdb-set mi-async on
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1336) ->1001^done\n"},"seq":48}
+1: (1336) ->1001^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1336) ->(gdb)\n"},"seq":50}
+1: (1336) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1339) 1001: elapsed time 4\n"},"seq":52}
+1: (1339) 1001: elapsed time 4
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1353) <-1002-enable-pretty-printing\n"},"seq":54}
+1: (1353) <-1002-enable-pretty-printing
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1353) ->1002^done\n"},"seq":56}
+1: (1353) ->1002^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1354) ->(gdb)\n"},"seq":58}
+1: (1354) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1354) 1002: elapsed time 0\n"},"seq":60}
+1: (1354) 1002: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1354) <-1003-gdb-set disassembly-flavor intel\n"},"seq":62}
+1: (1354) <-1003-gdb-set disassembly-flavor intel
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1354) ->1003^done\n"},"seq":64}
+1: (1354) ->1003^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1354) ->(gdb)\n"},"seq":66}
+1: (1354) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1354) 1003: elapsed time 0\n"},"seq":68}
+1: (1354) 1003: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1355) <-1004-interpreter-exec console \"set pagination off\"\n"},"seq":70}
+1: (1355) <-1004-interpreter-exec console "set pagination off"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1355) ->=cmd-param-changed,param=\"pagination\",value=\"off\"\n"},"seq":72}
+1: (1355) ->=cmd-param-changed,param="pagination",value="off"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1355) ->1004^done\n"},"seq":74}
+1: (1355) ->1004^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1355) ->(gdb)\n"},"seq":76}
+1: (1355) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1355) 1004: elapsed time 0\n"},"seq":78}
+1: (1355) 1004: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1356) <-1005-gdb-set auto-solib-add on\n"},"seq":80}
+1: (1356) <-1005-gdb-set auto-solib-add on
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1356) ->1005^done\n"},"seq":82}
+1: (1356) ->1005^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1356) ->(gdb)\n"},"seq":84}
+1: (1356) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1356) 1005: elapsed time 0\n"},"seq":86}
+1: (1356) 1005: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1356) <-1006-gdb-set solib-search-path /home/hfu5fe/oid_bug:\n"},"seq":88}
+1: (1356) <-1006-gdb-set solib-search-path /home/hfu5fe/oid_bug:
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1357) ->1006^done\n"},"seq":90}
+1: (1357) ->1006^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1357) ->(gdb)\n"},"seq":92}
+1: (1357) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1357) 1006: elapsed time 0\n"},"seq":94}
+1: (1357) 1006: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1357) <-1007-gdb-set stop-on-solib-events 1\n"},"seq":96}
+1: (1357) <-1007-gdb-set stop-on-solib-events 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1357) ->1007^done\n"},"seq":98}
+1: (1357) ->1007^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1358) ->(gdb)\n"},"seq":100}
+1: (1358) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1358) 1007: elapsed time 0\n"},"seq":102}
+1: (1358) 1007: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1358) <-1008-environment-cd /home/hfu5fe/oid_bug\n"},"seq":104}
+1: (1358) <-1008-environment-cd /home/hfu5fe/oid_bug
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1358) ->1008^done\n"},"seq":106}
+1: (1358) ->1008^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1358) ->(gdb)\n"},"seq":108}
+1: (1358) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1358) 1008: elapsed time 0\n"},"seq":110}
+1: (1358) 1008: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1359) <-1009-file-exec-and-symbols /home/hfu5fe/oid_bug/oid_bug\n"},"seq":112}
+1: (1359) <-1009-file-exec-and-symbols /home/hfu5fe/oid_bug/oid_bug
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1839) ->1009^done\n"},"seq":114}
+1: (1839) ->1009^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1840) ->(gdb)\n"},"seq":116}
+1: (1840) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1840) 1009: elapsed time 481\n"},"seq":118}
+1: (1840) 1009: elapsed time 481
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1841) <-1010-interpreter-exec console \"show architecture\"\n"},"seq":120}
+1: (1841) <-1010-interpreter-exec console "show architecture"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1842) ->~\"The target architecture is set automatically (currently i386:x86-64)\\n\"\n"},"seq":122}
+1: (1842) ->~"The target architecture is set automatically (currently i386:x86-64)\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1842) ->1010^done\n"},"seq":124}
+1: (1842) ->1010^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1842) ->(gdb)\n"},"seq":126}
+1: (1842) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1842) 1010: elapsed time 0\n"},"seq":128}
+1: (1842) 1010: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1843) <-1011-break-insert -f main\n"},"seq":130}
+1: (1843) <-1011-break-insert -f main
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1846) ->1011^done,bkpt={number=\"1\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x000000000003ebc1\",func=\"main(int, char**)\",file=\"oid_bug.cpp\",fullname=\"/home/hfu5fe/oid_bug/oid_bug.cpp\",line=\"23\",thread-groups=[\"i1\"],times=\"0\",original-location=\"main\"}\n"},"seq":132}
+1: (1846) ->1011^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x000000000003ebc1",func="main(int, char**)",file="oid_bug.cpp",fullname="/home/hfu5fe/oid_bug/oid_bug.cpp",line="23",thread-groups=["i1"],times="0",original-location="main"}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1846) ->(gdb)\n"},"seq":134}
+1: (1846) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1854) 1011: elapsed time 10\n"},"seq":136}
+1: (1854) 1011: elapsed time 10
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1860) Send Event AD7EngineCreateEvent\n"},"seq":138}
+1: (1860) Send Event AD7EngineCreateEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1863) Send Event AD7ProgramCreateEvent\n"},"seq":140}
+1: (1863) Send Event AD7ProgramCreateEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"telemetry","output":"VS/Diagnostics/Debugger/Launch","data":{"VS.Diagnostics.Debugger.ImplementationName":"Microsoft.MIDebugEngine","VS.Diagnostics.Debugger.EngineVersion":"17.4.21117.1","VS.Diagnostics.Debugger.HostVersion":"17.4.21117.1","VS.Diagnostics.Debugger.AdapterId":"cppdbg","VS.Diagnostics.Debugger.Launch.Duration":1801,"VS.Diagnostics.Debugger.MIMode":"gdb","VS.Diagnostics.Debugger.FrameworkVersion":"6.0.1122.52304"}},"seq":142}
+--> R (launch-2): {"type":"response","request_seq":2,"success":true,"command":"launch","body":{},"seq":144}
+--> E (initialized): {"type":"event","event":"initialized","body":{},"seq":146}
+<--   R (runInTerminal-6) [1743 ms]: {"type":"response","seq":3,"command":"runInTerminal","request_seq":6,"success":true,"body":{"shellProcessId":31252}}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1887) ShellPid=31415\n"},"seq":149}
+1: (1887) ShellPid=31415
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1888) DebuggerPid=31417\n"},"seq":151}
+1: (1888) DebuggerPid=31417
+<--   C (setBreakpoints-4): {"command":"setBreakpoints","arguments":{"source":{"name":"oid_bug.cpp","path":"/home/hfu5fe/oid_bug/oid_bug.cpp"},"lines":[31],"breakpoints":[{"line":31}],"sourceModified":false},"type":"request","seq":4}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1972) <-1012-break-insert -f oid_bug.cpp:31\n"},"seq":154}
+1: (1972) <-1012-break-insert -f oid_bug.cpp:31
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1973) ->1012^done,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x000000000003ecce\",func=\"C_A_T_C_H_T_E_S_T_0()\",file=\"oid_bug.cpp\",fullname=\"/home/hfu5fe/oid_bug/oid_bug.cpp\",line=\"31\",thread-groups=[\"i1\"],times=\"0\",original-location=\"oid_bug.cpp:31\"}\n"},"seq":156}
+1: (1973) ->1012^done,bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="0x000000000003ecce",func="C_A_T_C_H_T_E_S_T_0()",file="oid_bug.cpp",fullname="/home/hfu5fe/oid_bug/oid_bug.cpp",line="31",thread-groups=["i1"],times="0",original-location="oid_bug.cpp:31"}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1973) ->(gdb)\n"},"seq":158}
+1: (1973) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1975) 1012: elapsed time 2\n"},"seq":160}
+1: (1975) 1012: elapsed time 2
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1985) <-1013-symbol-list-lines /home/hfu5fe/oid_bug/oid_bug.cpp\n"},"seq":162}
+1: (1985) <-1013-symbol-list-lines /home/hfu5fe/oid_bug/oid_bug.cpp
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1985) ->1013^done,lines=[{pc=\"0x000000000003ebc1\",line=\"23\"},{pc=\"0x000000000003ebde\",line=\"23\"},{pc=\"0x000000000003ebed\",line=\"24\"},{pc=\"0x000000000003ebfc\",line=\"24\"},{pc=\"0x000000000003ec20\",line=\"24\"},{pc=\"0x000000000003ec2f\",line=\"25\"},{pc=\"0x000000000003ec35\",line=\"26\"},{pc=\"0x000000000003ec4d\",line=\"24\"},{pc=\"0x000000000003ec67\",line=\"26\"},{pc=\"0x000000000003ec76\",line=\"29\"},{pc=\"0x000000000003ec82\",line=\"29\"},{pc=\"0x000000000003ec91\",line=\"30\"},{pc=\"0x000000000003ecce\",line=\"31\"},{pc=\"0x000000000003ecdf\",line=\"32\"},{pc=\"0x000000000003ecf6\",line=\"0\"},{pc=\"0x0000000000049caf\",line=\"32\"},{pc=\"0x0000000000049ccb\",line=\"32\"},{pc=\"0x0000000000049cf7\",line=\"0\"},{pc=\"0x0000000000049ecd\",line=\"28\"},{pc=\"0x0000000000049fa3\",line=\"32\"},{pc=\"0x0000000000049faf\",line=\"0\"},{pc=\"0x000000000004a092\",line=\"32\"},{pc=\"0x000000000004a0b0\",line=\"0\"},{pc=\"0x000000000004ca96\",line=\"32\"},{pc=\"0x000000000004ca9e\",line=\"32\"},{pc=\"0x000000000004caaf\",line=\"0\"}]\n"},"seq":164}
+1: (1985) ->1013^done,lines=[{pc="0x000000000003ebc1",line="23"},{pc="0x000000000003ebde",line="23"},{pc="0x000000000003ebed",line="24"},{pc="0x000000000003ebfc",line="24"},{pc="0x000000000003ec20",line="24"},{pc="0x000000000003ec2f",line="25"},{pc="0x000000000003ec35",line="26"},{pc="0x000000000003ec4d",line="24"},{pc="0x000000000003ec67",line="26"},{pc="0x000000000003ec76",line="29"},{pc="0x000000000003ec82",line="29"},{pc="0x000000000003ec91",line="30"},{pc="0x000000000003ecce",line="31"},{pc="0x000000000003ecdf",line="32"},{pc="0x000000000003ecf6",line="0"},{pc="0x0000000000049caf",line="32"},{pc="0x0000000000049ccb",line="32"},{pc="0x0000000000049cf7",line="0"},{pc="0x0000000000049ecd",line="28"},{pc="0x0000000000049fa3",line="32"},{pc="0x0000000000049faf",line="0"},{pc="0x000000000004a092",line="32"},{pc="0x000000000004a0b0",line="0"},{pc="0x000000000004ca96",line="32"},{pc="0x000000000004ca9e",line="32"},{pc="0x000000000004caaf",line="0"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1986) ->(gdb)\n"},"seq":166}
+1: (1986) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1989) 1013: elapsed time 3\n"},"seq":168}
+1: (1989) 1013: elapsed time 3
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (1998) Send Event AD7BreakpointBoundEvent\n"},"seq":170}
+1: (1998) Send Event AD7BreakpointBoundEvent
+--> R (setBreakpoints-4): {"type":"response","request_seq":4,"success":true,"command":"setBreakpoints","body":{"breakpoints":[{"id":1,"verified":true,"line":31,"BoundBreakpoints":[]}]},"seq":172}
+--> E (breakpoint): {"type":"event","event":"breakpoint","body":{"reason":"changed","breakpoint":{"id":1,"verified":true,"line":31,"BoundBreakpoints":[]}},"seq":174}
+<--   C (setBreakpoints-5): {"command":"setBreakpoints","arguments":{"source":{"name":"test_avp_stereo_gridLabeler.cpp","path":"/home/hfu5fe/cp/cp.avp.integration/safety/stereo/test/test_avp_stereo_gridLabeler.cpp"},"lines":[3],"breakpoints":[{"line":3}],"sourceModified":false},"type":"request","seq":5}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2026) <-1014-break-insert -f test_avp_stereo_gridLabeler.cpp:3\n"},"seq":177}
+1: (2026) <-1014-break-insert -f test_avp_stereo_gridLabeler.cpp:3
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2030) ->&\"No source file named test_avp_stereo_gridLabeler.cpp.\\n\"\n"},"seq":179}
+1: (2030) ->&"No source file named test_avp_stereo_gridLabeler.cpp.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2030) ->1014^done,bkpt={number=\"3\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<PENDING>\",pending=\"test_avp_stereo_gridLabeler.cpp:3\",times=\"0\",original-location=\"test_avp_stereo_gridLabeler.cpp:3\"}\n"},"seq":181}
+1: (2030) ->1014^done,bkpt={number="3",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="test_avp_stereo_gridLabeler.cpp:3",times="0",original-location="test_avp_stereo_gridLabeler.cpp:3"}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2030) ->(gdb)\n"},"seq":183}
+1: (2030) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2030) 1014: elapsed time 4\n"},"seq":185}
+1: (2030) 1014: elapsed time 4
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2031) Send Event AD7BreakpointErrorEvent\n"},"seq":187}
+1: (2031) Send Event AD7BreakpointErrorEvent
+--> R (setBreakpoints-5): {"type":"response","request_seq":5,"success":true,"command":"setBreakpoints","body":{"breakpoints":[{"id":2,"verified":true,"line":3,"BoundBreakpoints":[]}]},"seq":189}
+--> E (breakpoint): {"type":"event","event":"breakpoint","body":{"reason":"changed","breakpoint":{"id":2,"verified":false,"message":"Module containing this breakpoint has not yet loaded or the breakpoint address could not be obtained.","line":3,"BoundBreakpoints":[]}},"seq":191}
+<--   C (setBreakpoints-6): {"command":"setBreakpoints","arguments":{"source":{"name":"test_avp_stereo.cpp","path":"/home/hfu5fe/cp/cp.avp.integration/safety/stereo/test/test_avp_stereo.cpp"},"lines":[31],"breakpoints":[{"line":31}],"sourceModified":false},"type":"request","seq":6}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2033) <-1015-break-insert -f test_avp_stereo.cpp:31\n"},"seq":194}
+1: (2033) <-1015-break-insert -f test_avp_stereo.cpp:31
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2035) ->&\"No source file named test_avp_stereo.cpp.\\n\"\n"},"seq":196}
+1: (2035) ->&"No source file named test_avp_stereo.cpp.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2035) ->1015^done,bkpt={number=\"4\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<PENDING>\",pending=\"test_avp_stereo.cpp:31\",times=\"0\",original-location=\"test_avp_stereo.cpp:31\"}\n"},"seq":198}
+1: (2035) ->1015^done,bkpt={number="4",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="test_avp_stereo.cpp:31",times="0",original-location="test_avp_stereo.cpp:31"}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2035) ->(gdb)\n"},"seq":200}
+1: (2035) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2035) 1015: elapsed time 2\n"},"seq":202}
+1: (2035) 1015: elapsed time 2
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2036) Send Event AD7BreakpointErrorEvent\n"},"seq":204}
+1: (2036) Send Event AD7BreakpointErrorEvent
+--> R (setBreakpoints-6): {"type":"response","request_seq":6,"success":true,"command":"setBreakpoints","body":{"breakpoints":[{"id":3,"verified":true,"line":31,"BoundBreakpoints":[]}]},"seq":206}
+--> E (breakpoint): {"type":"event","event":"breakpoint","body":{"reason":"changed","breakpoint":{"id":3,"verified":false,"message":"Module containing this breakpoint has not yet loaded or the breakpoint address could not be obtained.","line":31,"BoundBreakpoints":[]}},"seq":208}
+<--   C (setFunctionBreakpoints-7): {"command":"setFunctionBreakpoints","arguments":{"breakpoints":[]},"type":"request","seq":7}
+--> R (setFunctionBreakpoints-7): {"type":"response","request_seq":7,"success":true,"command":"setFunctionBreakpoints","body":{"breakpoints":[]},"seq":211}
+<--   C (setDataBreakpoints-8): {"command":"setDataBreakpoints","arguments":{"breakpoints":[]},"type":"request","seq":8}
+--> R (setDataBreakpoints-8): {"type":"response","request_seq":8,"success":true,"command":"setDataBreakpoints","body":{"breakpoints":[]},"seq":214}
+<--   C (setInstructionBreakpoints-9): {"command":"setInstructionBreakpoints","arguments":{"breakpoints":[]},"type":"request","seq":9}
+--> R (setInstructionBreakpoints-9): {"type":"response","request_seq":9,"success":true,"command":"setInstructionBreakpoints","body":{"breakpoints":[]},"seq":217}
+<--   C (setExceptionBreakpoints-10): {"command":"setExceptionBreakpoints","arguments":{"filters":[],"filterOptions":[]},"type":"request","seq":10}
+--> R (setExceptionBreakpoints-10): {"type":"response","request_seq":10,"success":true,"command":"setExceptionBreakpoints","body":{"breakpoints":[]},"seq":220}
+<--   C (configurationDone-11): {"command":"configurationDone","type":"request","seq":11}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2135) Send Event AD7LoadCompleteEvent\n"},"seq":224}
+1: (2135) Send Event AD7LoadCompleteEvent
+--> R (configurationDone-11): {"type":"response","request_seq":11,"success":true,"command":"configurationDone","body":{},"seq":223}
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"=thread-group-added,id=\"i1\"\nGNU gdb (Ubuntu 9.2-0ubuntu1~20.04.1) 9.2\nCopyright (C) 2020 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\nType \"show copying\" and \"show warranty\" for details.\nThis GDB was configured as \"x86_64-linux-gnu\".\nType \"show configuration\" for configuration details.\nFor bug reporting instructions, please see:\n<http://www.gnu.org/software/gdb/bugs/>.\nFind the GDB manual and other documentation resources online at:\n    <http://www.gnu.org/software/gdb/documentation/>.\n\nFor help, type \"help\".\nType \"apropos word\" to search for commands related to \"word\".\n[OpenImageDebugger] Info: Could not activate hooks for any IDEs\nFile(s) /usr/include/c++/9/bits/*.h will be skipped when stepping.\nFile(s) catch2/* will be skipped when stepping.\nFile(s) vfc/core/* will be skipped when stepping.\nWarning: Debuggee TargetArchitecture not detected, assuming x86_64.\n=cmd-param-changed,param=\"pagination\",value=\"off\"\n"},"seq":227}
+=thread-group-added,id="i1"
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04.1) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+[OpenImageDebugger] Info: Could not activate hooks for any IDEs
+File(s) /usr/include/c++/9/bits/*.h will be skipped when stepping.
+File(s) catch2/* will be skipped when stepping.
+File(s) vfc/core/* will be skipped when stepping.
+Warning: Debuggee TargetArchitecture not detected, assuming x86_64.
+=cmd-param-changed,param="pagination",value="off"
+<--   C (threads-12): {"command":"threads","type":"request","seq":12}
+--> R (threads-12): {"type":"response","request_seq":12,"success":true,"command":"threads","body":{"threads":[]},"seq":230}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2151) <-1016-exec-run\n"},"seq":232}
+1: (2151) <-1016-exec-run
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2152) ->=thread-group-started,id=\"i1\",pid=\"31438\"\n"},"seq":234}
+1: (2152) ->=thread-group-started,id="i1",pid="31438"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2152) ->=thread-created,id=\"1\",group-id=\"i1\"\n"},"seq":236}
+1: (2152) ->=thread-created,id="1",group-id="i1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2155) <-1017-thread-info 1\n"},"seq":238}
+1: (2155) <-1017-thread-info 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2174) ->=breakpoint-modified,bkpt={number=\"1\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x0000555555592bc1\",func=\"main(int, char**)\",file=\"oid_bug.cpp\",fullname=\"/home/hfu5fe/oid_bug/oid_bug.cpp\",line=\"23\",thread-groups=[\"i1\"],times=\"0\",original-location=\"main\"}\n"},"seq":240}
+1: (2174) ->=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x0000555555592bc1",func="main(int, char**)",file="oid_bug.cpp",fullname="/home/hfu5fe/oid_bug/oid_bug.cpp",line="23",thread-groups=["i1"],times="0",original-location="main"}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2174) ->=breakpoint-modified,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x0000555555592cce\",func=\"C_A_T_C_H_T_E_S_T_0()\",file=\"oid_bug.cpp\",fullname=\"/home/hfu5fe/oid_bug/oid_bug.cpp\",line=\"31\",thread-groups=[\"i1\"],times=\"0\",original-location=\"oid_bug.cpp:31\"}\n"},"seq":242}
+1: (2174) ->=breakpoint-modified,bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="0x0000555555592cce",func="C_A_T_C_H_T_E_S_T_0()",file="oid_bug.cpp",fullname="/home/hfu5fe/oid_bug/oid_bug.cpp",line="31",thread-groups=["i1"],times="0",original-location="oid_bug.cpp:31"}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2184) ->=library-loaded,id=\"/lib64/ld-linux-x86-64.so.2\",target-name=\"/lib64/ld-linux-x86-64.so.2\",host-name=\"/lib64/ld-linux-x86-64.so.2\",symbols-loaded=\"0\",thread-group=\"i1\",ranges=[{from=\"0x00007ffff7fd0100\",to=\"0x00007ffff7ff2684\"}]\n"},"seq":244}
+1: (2184) ->=library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fd0100",to="0x00007ffff7ff2684"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2188) <-1018-symbol-list-lines /home/hfu5fe/oid_bug/oid_bug.cpp\n"},"seq":246}
+1: (2188) <-1018-symbol-list-lines /home/hfu5fe/oid_bug/oid_bug.cpp
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2227) ->1016^running\n"},"seq":248}
+1: (2227) ->1016^running
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2228) ->*running,thread-id=\"all\"\n"},"seq":250}
+1: (2228) ->*running,thread-id="all"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2228) 1016: elapsed time 76\n"},"seq":252}
+1: (2228) 1016: elapsed time 76
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2228) ->(gdb)\n"},"seq":254}
+1: (2228) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2228) ->1017^done,threads=[{id=\"1\",target-id=\"process 31438\",name=\"oid_bug\",state=\"running\",core=\"11\"}]\n"},"seq":256}
+1: (2228) ->1017^done,threads=[{id="1",target-id="process 31438",name="oid_bug",state="running",core="11"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2228) ->(gdb)\n"},"seq":258}
+1: (2228) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2228) ->~\"Stopped due to shared library event (no libraries added or removed)\\n\"\n"},"seq":260}
+1: (2228) ->~"Stopped due to shared library event (no libraries added or removed)\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2228) ->*stopped,reason=\"solib-event\",thread-id=\"1\",stopped-threads=\"all\",core=\"11\"\n"},"seq":262}
+1: (2228) ->*stopped,reason="solib-event",thread-id="1",stopped-threads="all",core="11"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2230) 1017: elapsed time 74\n"},"seq":264}
+1: (2230) 1017: elapsed time 74
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2232) Send Event AD7ProcessInfoUpdatedEvent\n"},"seq":266}
+1: (2232) Send Event AD7ProcessInfoUpdatedEvent
+--> E (process): {"type":"event","event":"process","body":{"startMethod":"launch","name":"/home/hfu5fe/oid_bug/oid_bug","systemProcessId":31438,"pointerSize":64},"seq":268}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2239) Send Event AD7ThreadCreateEvent\n"},"seq":270}
+1: (2239) Send Event AD7ThreadCreateEvent
+--> E (thread): {"type":"event","event":"thread","body":{"reason":"started","threadId":31438},"seq":272}
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"Stopped due to shared library event (no libraries added or removed)\n"},"seq":274}
+Stopped due to shared library event (no libraries added or removed)
+<--   C (threads-13): {"command":"threads","type":"request","seq":13}
+--> R (threads-13): {"type":"response","request_seq":13,"success":true,"command":"threads","body":{"threads":[{"id":31438,"name":"oid_bug [31438]"}]},"seq":277}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2927) ->1018^done,lines=[{pc=\"0x0000555555592bc1\",line=\"23\"},{pc=\"0x0000555555592bde\",line=\"23\"},{pc=\"0x0000555555592bed\",line=\"24\"},{pc=\"0x0000555555592bfc\",line=\"24\"},{pc=\"0x0000555555592c20\",line=\"24\"},{pc=\"0x0000555555592c2f\",line=\"25\"},{pc=\"0x0000555555592c35\",line=\"26\"},{pc=\"0x0000555555592c4d\",line=\"24\"},{pc=\"0x0000555555592c67\",line=\"26\"},{pc=\"0x0000555555592c76\",line=\"29\"},{pc=\"0x0000555555592c82\",line=\"29\"},{pc=\"0x0000555555592c91\",line=\"30\"},{pc=\"0x0000555555592cce\",line=\"31\"},{pc=\"0x0000555555592cdf\",line=\"32\"},{pc=\"0x0000555555592cf6\",line=\"0\"},{pc=\"0x000055555559dcaf\",line=\"32\"},{pc=\"0x000055555559dccb\",line=\"32\"},{pc=\"0x000055555559dcf7\",line=\"0\"},{pc=\"0x000055555559decd\",line=\"28\"},{pc=\"0x000055555559dfa3\",line=\"32\"},{pc=\"0x000055555559dfaf\",line=\"0\"},{pc=\"0x000055555559e092\",line=\"32\"},{pc=\"0x000055555559e0b0\",line=\"0\"},{pc=\"0x00005555555a0a96\",line=\"32\"},{pc=\"0x00005555555a0a9e\",line=\"32\"},{pc=\"0x00005555555a0aaf\",line=\"0\"}]\n"},"seq":279}
+1: (2927) ->1018^done,lines=[{pc="0x0000555555592bc1",line="23"},{pc="0x0000555555592bde",line="23"},{pc="0x0000555555592bed",line="24"},{pc="0x0000555555592bfc",line="24"},{pc="0x0000555555592c20",line="24"},{pc="0x0000555555592c2f",line="25"},{pc="0x0000555555592c35",line="26"},{pc="0x0000555555592c4d",line="24"},{pc="0x0000555555592c67",line="26"},{pc="0x0000555555592c76",line="29"},{pc="0x0000555555592c82",line="29"},{pc="0x0000555555592c91",line="30"},{pc="0x0000555555592cce",line="31"},{pc="0x0000555555592cdf",line="32"},{pc="0x0000555555592cf6",line="0"},{pc="0x000055555559dcaf",line="32"},{pc="0x000055555559dccb",line="32"},{pc="0x000055555559dcf7",line="0"},{pc="0x000055555559decd",line="28"},{pc="0x000055555559dfa3",line="32"},{pc="0x000055555559dfaf",line="0"},{pc="0x000055555559e092",line="32"},{pc="0x000055555559e0b0",line="0"},{pc="0x00005555555a0a96",line="32"},{pc="0x00005555555a0a9e",line="32"},{pc="0x00005555555a0aaf",line="0"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2927) ->(gdb)\n"},"seq":281}
+1: (2927) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2927) 1018: elapsed time 739\n"},"seq":283}
+1: (2927) 1018: elapsed time 739
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2928) <-1019-interpreter-exec console \"shell echo -e \\\\\\\\033c 1>&2\"\n"},"seq":285}
+1: (2928) <-1019-interpreter-exec console "shell echo -e \\\\033c 1>&2"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2929) ->1019^done\n"},"seq":287}
+1: (2929) ->1019^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2930) ->(gdb)\n"},"seq":289}
+1: (2930) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2929) Send Event AD7BreakpointUnboundEvent\n"},"seq":291}
+1: (2929) Send Event AD7BreakpointUnboundEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2930) Send Event AD7BreakpointBoundEvent\n"},"seq":293}
+1: (2930) Send Event AD7BreakpointBoundEvent
+--> E (breakpoint): {"type":"event","event":"breakpoint","body":{"reason":"changed","breakpoint":{"id":1,"verified":true,"line":31,"BoundBreakpoints":[]}},"seq":295}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2931) 1019: elapsed time 3\n"},"seq":297}
+1: (2931) 1019: elapsed time 3
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2932) <-1020-gdb-set stop-on-solib-events 0\n"},"seq":299}
+1: (2932) <-1020-gdb-set stop-on-solib-events 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2933) ->1020^done\n"},"seq":301}
+1: (2933) ->1020^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2933) ->(gdb)\n"},"seq":303}
+1: (2933) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2933) 1020: elapsed time 0\n"},"seq":305}
+1: (2933) 1020: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2939) <-1021-break-info 3\n"},"seq":307}
+1: (2939) <-1021-break-info 3
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2939) ->1021^done,BreakpointTable={nr_rows=\"1\",nr_cols=\"6\",hdr=[{width=\"7\",alignment=\"-1\",col_name=\"number\",colhdr=\"Num\"},{width=\"14\",alignment=\"-1\",col_name=\"type\",colhdr=\"Type\"},{width=\"4\",alignment=\"-1\",col_name=\"disp\",colhdr=\"Disp\"},{width=\"3\",alignment=\"-1\",col_name=\"enabled\",colhdr=\"Enb\"},{width=\"10\",alignment=\"-1\",col_name=\"addr\",colhdr=\"Address\"},{width=\"40\",alignment=\"2\",col_name=\"what\",colhdr=\"What\"}],body=[bkpt={number=\"3\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<PENDING>\",pending=\"test_avp_stereo_gridLabeler.cpp:3\",times=\"0\",original-location=\"test_avp_stereo_gridLabeler.cpp:3\"}]}\n"},"seq":309}
+1: (2939) ->1021^done,BreakpointTable={nr_rows="1",nr_cols="6",hdr=[{width="7",alignment="-1",col_name="number",colhdr="Num"},{width="14",alignment="-1",col_name="type",colhdr="Type"},{width="4",alignment="-1",col_name="disp",colhdr="Disp"},{width="3",alignment="-1",col_name="enabled",colhdr="Enb"},{width="10",alignment="-1",col_name="addr",colhdr="Address"},{width="40",alignment="2",col_name="what",colhdr="What"}],body=[bkpt={number="3",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="test_avp_stereo_gridLabeler.cpp:3",times="0",original-location="test_avp_stereo_gridLabeler.cpp:3"}]}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2939) ->(gdb)\n"},"seq":311}
+1: (2939) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2941) 1021: elapsed time 1\n"},"seq":313}
+1: (2941) 1021: elapsed time 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2942) <-1022-break-info 4\n"},"seq":315}
+1: (2942) <-1022-break-info 4
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2943) ->1022^done,BreakpointTable={nr_rows=\"1\",nr_cols=\"6\",hdr=[{width=\"7\",alignment=\"-1\",col_name=\"number\",colhdr=\"Num\"},{width=\"14\",alignment=\"-1\",col_name=\"type\",colhdr=\"Type\"},{width=\"4\",alignment=\"-1\",col_name=\"disp\",colhdr=\"Disp\"},{width=\"3\",alignment=\"-1\",col_name=\"enabled\",colhdr=\"Enb\"},{width=\"10\",alignment=\"-1\",col_name=\"addr\",colhdr=\"Address\"},{width=\"40\",alignment=\"2\",col_name=\"what\",colhdr=\"What\"}],body=[bkpt={number=\"4\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<PENDING>\",pending=\"test_avp_stereo.cpp:31\",times=\"0\",original-location=\"test_avp_stereo.cpp:31\"}]}\n"},"seq":317}
+1: (2943) ->1022^done,BreakpointTable={nr_rows="1",nr_cols="6",hdr=[{width="7",alignment="-1",col_name="number",colhdr="Num"},{width="14",alignment="-1",col_name="type",colhdr="Type"},{width="4",alignment="-1",col_name="disp",colhdr="Disp"},{width="3",alignment="-1",col_name="enabled",colhdr="Enb"},{width="10",alignment="-1",col_name="addr",colhdr="Address"},{width="40",alignment="2",col_name="what",colhdr="What"}],body=[bkpt={number="4",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="test_avp_stereo.cpp:31",times="0",original-location="test_avp_stereo.cpp:31"}]}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2943) ->(gdb)\n"},"seq":319}
+1: (2943) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2943) 1022: elapsed time 0\n"},"seq":321}
+1: (2943) 1022: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2946) <-1023-interpreter-exec console \"info sharedlibrary\"\n"},"seq":323}
+1: (2946) <-1023-interpreter-exec console "info sharedlibrary"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2947) ->~\"From                To                  Syms Read   Shared Object Library\\n\"\n"},"seq":325}
+1: (2947) ->~"From                To                  Syms Read   Shared Object Library\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2947) ->~\"0x00007ffff7fd0100  0x00007ffff7ff2684  Yes         /lib64/ld-linux-x86-64.so.2\\n\"\n"},"seq":327}
+1: (2947) ->~"0x00007ffff7fd0100  0x00007ffff7ff2684  Yes         /lib64/ld-linux-x86-64.so.2\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2947) ->1023^done\n"},"seq":329}
+1: (2947) ->1023^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2947) ->(gdb)\n"},"seq":331}
+1: (2947) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2947) 1023: elapsed time 0\n"},"seq":333}
+1: (2947) 1023: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2949) Send Event AD7ModuleLoadEvent\n"},"seq":335}
+1: (2949) Send Event AD7ModuleLoadEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"Loaded '/lib64/ld-linux-x86-64.so.2'. Symbols loaded.\n"},"seq":337}
+Loaded '/lib64/ld-linux-x86-64.so.2'. Symbols loaded.
+--> E (module): {"type":"event","event":"module","body":{"reason":"new","module":{"id":1,"name":"ld-linux-x86-64.so.2","path":"/lib64/ld-linux-x86-64.so.2","symbolFilePath":"/lib64/ld-linux-x86-64.so.2","vsLoadAddress":"140737353941248","vsPreferredLoadAddress":"140737353941248","vsModuleSize":140676,"vsLoadOrder":0,"vsTimestampUTC":"1649294681","vsIs64Bit":true}},"seq":339}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2966) <--exec-continue\n"},"seq":341}
+1: (2966) <--exec-continue
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2966) ->^running\n"},"seq":343}
+1: (2966) ->^running
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2966) ->*running,thread-id=\"all\"\n"},"seq":345}
+1: (2966) ->*running,thread-id="all"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2966) ->(gdb)\n"},"seq":347}
+1: (2966) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2967) ->=library-loaded,id=\"/lib/x86_64-linux-gnu/libstdc++.so.6\",target-name=\"/lib/x86_64-linux-gnu/libstdc++.so.6\",host-name=\"/lib/x86_64-linux-gnu/libstdc++.so.6\",symbols-loaded=\"0\",thread-group=\"i1\",ranges=[{from=\"0x00007ffff7e65160\",to=\"0x00007ffff7f4d452\"}]\n"},"seq":349}
+1: (2967) ->=library-loaded,id="/lib/x86_64-linux-gnu/libstdc++.so.6",target-name="/lib/x86_64-linux-gnu/libstdc++.so.6",host-name="/lib/x86_64-linux-gnu/libstdc++.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7e65160",to="0x00007ffff7f4d452"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2967) ->=library-loaded,id=\"/lib/x86_64-linux-gnu/libm.so.6\",target-name=\"/lib/x86_64-linux-gnu/libm.so.6\",host-name=\"/lib/x86_64-linux-gnu/libm.so.6\",symbols-loaded=\"0\",thread-group=\"i1\",ranges=[{from=\"0x00007ffff7c853c0\",to=\"0x00007ffff7d2bfa8\"}]\n"},"seq":351}
+1: (2967) ->=library-loaded,id="/lib/x86_64-linux-gnu/libm.so.6",target-name="/lib/x86_64-linux-gnu/libm.so.6",host-name="/lib/x86_64-linux-gnu/libm.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7c853c0",to="0x00007ffff7d2bfa8"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2967) ->=library-loaded,id=\"/lib/x86_64-linux-gnu/libgcc_s.so.1\",target-name=\"/lib/x86_64-linux-gnu/libgcc_s.so.1\",host-name=\"/lib/x86_64-linux-gnu/libgcc_s.so.1\",symbols-loaded=\"0\",thread-group=\"i1\",ranges=[{from=\"0x00007ffff7c605e0\",to=\"0x00007ffff7c71045\"}]\n"},"seq":353}
+1: (2967) ->=library-loaded,id="/lib/x86_64-linux-gnu/libgcc_s.so.1",target-name="/lib/x86_64-linux-gnu/libgcc_s.so.1",host-name="/lib/x86_64-linux-gnu/libgcc_s.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7c605e0",to="0x00007ffff7c71045"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (2968) ->=library-loaded,id=\"/lib/x86_64-linux-gnu/libc.so.6\",target-name=\"/lib/x86_64-linux-gnu/libc.so.6\",host-name=\"/lib/x86_64-linux-gnu/libc.so.6\",symbols-loaded=\"0\",thread-group=\"i1\",ranges=[{from=\"0x00007ffff7a8d630\",to=\"0x00007ffff7c0227d\"}]\n"},"seq":355}
+1: (2968) ->=library-loaded,id="/lib/x86_64-linux-gnu/libc.so.6",target-name="/lib/x86_64-linux-gnu/libc.so.6",host-name="/lib/x86_64-linux-gnu/libc.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7a8d630",to="0x00007ffff7c0227d"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3368) ->=breakpoint-modified,bkpt={number=\"1\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x0000555555592bc1\",func=\"main(int, char**)\",file=\"oid_bug.cpp\",fullname=\"/home/hfu5fe/oid_bug/oid_bug.cpp\",line=\"23\",thread-groups=[\"i1\"],times=\"1\",original-location=\"main\"}\n"},"seq":357}
+1: (3368) ->=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x0000555555592bc1",func="main(int, char**)",file="oid_bug.cpp",fullname="/home/hfu5fe/oid_bug/oid_bug.cpp",line="23",thread-groups=["i1"],times="1",original-location="main"}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3379) ->~\"\\n\"\n"},"seq":359}
+1: (3379) ->~"\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"\n"},"seq":361}
+
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3379) ->~\"Breakpoint 1, main (argc=29811, argv=0x6f6972616e656353) at oid_bug.cpp:23\\n\"\n"},"seq":362}
+1: (3379) ->~"Breakpoint 1, main (argc=29811, argv=0x6f6972616e656353) at oid_bug.cpp:23\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3379) ->&\"warning: Source file is more recent than executable.\\n\"\n"},"seq":365}
+1: (3379) ->&"warning: Source file is more recent than executable.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3379) ->~\"23\\t{\\n\"\n"},"seq":368}
+1: (3379) ->~"23\t{\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"Breakpoint 1, main (argc=29811, argv=0x6f6972616e656353) at oid_bug.cpp:23\n"},"seq":367}
+Breakpoint 1, main (argc=29811, argv=0x6f6972616e656353) at oid_bug.cpp:23
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3379) ->*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"1\",frame={addr=\"0x0000555555592bc1\",func=\"main\",args=[{name=\"argc\",value=\"29811\"},{name=\"argv\",value=\"0x6f6972616e656353\"}],file=\"oid_bug.cpp\",fullname=\"/home/hfu5fe/oid_bug/oid_bug.cpp\",line=\"23\",arch=\"i386:x86-64\"},thread-id=\"1\",stopped-threads=\"all\",core=\"10\"\n"},"seq":371}
+1: (3379) ->*stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x0000555555592bc1",func="main",args=[{name="argc",value="29811"},{name="argv",value="0x6f6972616e656353"}],file="oid_bug.cpp",fullname="/home/hfu5fe/oid_bug/oid_bug.cpp",line="23",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="10"
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"23\t{\n"},"seq":373}
+23	{
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3400) <-1024-thread-info\n"},"seq":375}
+1: (3400) <-1024-thread-info
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3693) ->1024^done,threads=[{id=\"1\",target-id=\"process 31438\",name=\"oid_bug\",frame={level=\"0\",addr=\"0x0000555555592bc1\",func=\"main\",args=[{name=\"argc\",value=\"29811\"},{name=\"argv\",value=\"0x6f6972616e656353\"}],file=\"oid_bug.cpp\",fullname=\"/home/hfu5fe/oid_bug/oid_bug.cpp\",line=\"23\",arch=\"i386:x86-64\"},state=\"stopped\",core=\"10\"}],current-thread-id=\"1\"\n"},"seq":377}
+1: (3693) ->1024^done,threads=[{id="1",target-id="process 31438",name="oid_bug",frame={level="0",addr="0x0000555555592bc1",func="main",args=[{name="argc",value="29811"},{name="argv",value="0x6f6972616e656353"}],file="oid_bug.cpp",fullname="/home/hfu5fe/oid_bug/oid_bug.cpp",line="23",arch="i386:x86-64"},state="stopped",core="10"}],current-thread-id="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3694) ->(gdb)\n"},"seq":379}
+1: (3694) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3694) 1024: elapsed time 294\n"},"seq":381}
+1: (3694) 1024: elapsed time 294
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3704) <-1025-break-info 3\n"},"seq":383}
+1: (3704) <-1025-break-info 3
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3706) ->1025^done,BreakpointTable={nr_rows=\"1\",nr_cols=\"6\",hdr=[{width=\"7\",alignment=\"-1\",col_name=\"number\",colhdr=\"Num\"},{width=\"14\",alignment=\"-1\",col_name=\"type\",colhdr=\"Type\"},{width=\"4\",alignment=\"-1\",col_name=\"disp\",colhdr=\"Disp\"},{width=\"3\",alignment=\"-1\",col_name=\"enabled\",colhdr=\"Enb\"},{width=\"10\",alignment=\"-1\",col_name=\"addr\",colhdr=\"Address\"},{width=\"40\",alignment=\"2\",col_name=\"what\",colhdr=\"What\"}],body=[bkpt={number=\"3\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<PENDING>\",pending=\"test_avp_stereo_gridLabeler.cpp:3\",times=\"0\",original-location=\"test_avp_stereo_gridLabeler.cpp:3\"}]}\n"},"seq":385}
+1: (3706) ->1025^done,BreakpointTable={nr_rows="1",nr_cols="6",hdr=[{width="7",alignment="-1",col_name="number",colhdr="Num"},{width="14",alignment="-1",col_name="type",colhdr="Type"},{width="4",alignment="-1",col_name="disp",colhdr="Disp"},{width="3",alignment="-1",col_name="enabled",colhdr="Enb"},{width="10",alignment="-1",col_name="addr",colhdr="Address"},{width="40",alignment="2",col_name="what",colhdr="What"}],body=[bkpt={number="3",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="test_avp_stereo_gridLabeler.cpp:3",times="0",original-location="test_avp_stereo_gridLabeler.cpp:3"}]}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3706) ->(gdb)\n"},"seq":387}
+1: (3706) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3706) 1025: elapsed time 1\n"},"seq":389}
+1: (3706) 1025: elapsed time 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3707) <-1026-break-info 4\n"},"seq":391}
+1: (3707) <-1026-break-info 4
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3708) ->1026^done,BreakpointTable={nr_rows=\"1\",nr_cols=\"6\",hdr=[{width=\"7\",alignment=\"-1\",col_name=\"number\",colhdr=\"Num\"},{width=\"14\",alignment=\"-1\",col_name=\"type\",colhdr=\"Type\"},{width=\"4\",alignment=\"-1\",col_name=\"disp\",colhdr=\"Disp\"},{width=\"3\",alignment=\"-1\",col_name=\"enabled\",colhdr=\"Enb\"},{width=\"10\",alignment=\"-1\",col_name=\"addr\",colhdr=\"Address\"},{width=\"40\",alignment=\"2\",col_name=\"what\",colhdr=\"What\"}],body=[bkpt={number=\"4\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<PENDING>\",pending=\"test_avp_stereo.cpp:31\",times=\"0\",original-location=\"test_avp_stereo.cpp:31\"}]}\n"},"seq":393}
+1: (3708) ->1026^done,BreakpointTable={nr_rows="1",nr_cols="6",hdr=[{width="7",alignment="-1",col_name="number",colhdr="Num"},{width="14",alignment="-1",col_name="type",colhdr="Type"},{width="4",alignment="-1",col_name="disp",colhdr="Disp"},{width="3",alignment="-1",col_name="enabled",colhdr="Enb"},{width="10",alignment="-1",col_name="addr",colhdr="Address"},{width="40",alignment="2",col_name="what",colhdr="What"}],body=[bkpt={number="4",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="test_avp_stereo.cpp:31",times="0",original-location="test_avp_stereo.cpp:31"}]}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3709) ->(gdb)\n"},"seq":395}
+1: (3709) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3709) 1026: elapsed time 1\n"},"seq":397}
+1: (3709) 1026: elapsed time 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3709) <-1027-interpreter-exec console \"info sharedlibrary\"\n"},"seq":399}
+1: (3709) <-1027-interpreter-exec console "info sharedlibrary"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3710) ->~\"From                To                  Syms Read   Shared Object Library\\n\"\n"},"seq":401}
+1: (3710) ->~"From                To                  Syms Read   Shared Object Library\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3710) ->~\"0x00007ffff7fd0100  0x00007ffff7ff2684  Yes         /lib64/ld-linux-x86-64.so.2\\n\"\n"},"seq":403}
+1: (3710) ->~"0x00007ffff7fd0100  0x00007ffff7ff2684  Yes         /lib64/ld-linux-x86-64.so.2\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3710) ->~\"0x00007ffff7e65160  0x00007ffff7f4d452  Yes         /lib/x86_64-linux-gnu/libstdc++.so.6\\n\"\n"},"seq":405}
+1: (3710) ->~"0x00007ffff7e65160  0x00007ffff7f4d452  Yes         /lib/x86_64-linux-gnu/libstdc++.so.6\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3710) ->~\"0x00007ffff7c853c0  0x00007ffff7d2bfa8  Yes         /lib/x86_64-linux-gnu/libm.so.6\\n\"\n"},"seq":407}
+1: (3710) ->~"0x00007ffff7c853c0  0x00007ffff7d2bfa8  Yes         /lib/x86_64-linux-gnu/libm.so.6\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3710) ->~\"0x00007ffff7c605e0  0x00007ffff7c71045  Yes         /lib/x86_64-linux-gnu/libgcc_s.so.1\\n\"\n"},"seq":409}
+1: (3710) ->~"0x00007ffff7c605e0  0x00007ffff7c71045  Yes         /lib/x86_64-linux-gnu/libgcc_s.so.1\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3711) ->~\"0x00007ffff7a8d630  0x00007ffff7c0227d  Yes         /lib/x86_64-linux-gnu/libc.so.6\\n\"\n"},"seq":411}
+1: (3711) ->~"0x00007ffff7a8d630  0x00007ffff7c0227d  Yes         /lib/x86_64-linux-gnu/libc.so.6\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3711) ->1027^done\n"},"seq":413}
+1: (3711) ->1027^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3711) ->(gdb)\n"},"seq":415}
+1: (3711) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3711) 1027: elapsed time 2\n"},"seq":417}
+1: (3711) 1027: elapsed time 2
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3712) Send Event AD7ModuleLoadEvent\n"},"seq":419}
+1: (3712) Send Event AD7ModuleLoadEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"Loaded '/lib/x86_64-linux-gnu/libstdc++.so.6'. Symbols loaded.\n"},"seq":421}
+Loaded '/lib/x86_64-linux-gnu/libstdc++.so.6'. Symbols loaded.
+--> E (module): {"type":"event","event":"module","body":{"reason":"new","module":{"id":2,"name":"libstdc++.so.6","path":"/lib/x86_64-linux-gnu/libstdc++.so.6","symbolFilePath":"/lib/x86_64-linux-gnu/libstdc++.so.6","vsLoadAddress":"140737352454496","vsPreferredLoadAddress":"140737352454496","vsModuleSize":951026,"vsLoadOrder":1,"vsTimestampUTC":"1622274567","vsIs64Bit":true}},"seq":423}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3712) Send Event AD7ModuleLoadEvent\n"},"seq":425}
+1: (3712) Send Event AD7ModuleLoadEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"Loaded '/lib/x86_64-linux-gnu/libm.so.6'. Symbols loaded.\n"},"seq":427}
+Loaded '/lib/x86_64-linux-gnu/libm.so.6'. Symbols loaded.
+--> E (module): {"type":"event","event":"module","body":{"reason":"new","module":{"id":3,"name":"libm.so.6","path":"/lib/x86_64-linux-gnu/libm.so.6","symbolFilePath":"/lib/x86_64-linux-gnu/libm.so.6","vsLoadAddress":"140737350489024","vsPreferredLoadAddress":"140737350489024","vsModuleSize":682984,"vsLoadOrder":2,"vsTimestampUTC":"1649294681","vsIs64Bit":true}},"seq":429}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3713) Send Event AD7ModuleLoadEvent\n"},"seq":431}
+1: (3713) Send Event AD7ModuleLoadEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"Loaded '/lib/x86_64-linux-gnu/libgcc_s.so.1'. Symbols loaded.\n"},"seq":433}
+Loaded '/lib/x86_64-linux-gnu/libgcc_s.so.1'. Symbols loaded.
+--> E (module): {"type":"event","event":"module","body":{"reason":"new","module":{"id":4,"name":"libgcc_s.so.1","path":"/lib/x86_64-linux-gnu/libgcc_s.so.1","symbolFilePath":"/lib/x86_64-linux-gnu/libgcc_s.so.1","vsLoadAddress":"140737350338016","vsPreferredLoadAddress":"140737350338016","vsModuleSize":68197,"vsLoadOrder":3,"vsTimestampUTC":"1622274567","vsIs64Bit":true}},"seq":435}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3713) Send Event AD7ModuleLoadEvent\n"},"seq":437}
+1: (3713) Send Event AD7ModuleLoadEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"Loaded '/lib/x86_64-linux-gnu/libc.so.6'. Symbols loaded.\n"},"seq":439}
+Loaded '/lib/x86_64-linux-gnu/libc.so.6'. Symbols loaded.
+--> E (module): {"type":"event","event":"module","body":{"reason":"new","module":{"id":5,"name":"libc.so.6","path":"/lib/x86_64-linux-gnu/libc.so.6","symbolFilePath":"/lib/x86_64-linux-gnu/libc.so.6","vsLoadAddress":"140737348425264","vsPreferredLoadAddress":"140737348425264","vsModuleSize":1526861,"vsLoadOrder":4,"vsTimestampUTC":"1649294681","vsIs64Bit":true}},"seq":441}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3717) <-1028-stack-list-frames 0 1000\n"},"seq":443}
+1: (3717) <-1028-stack-list-frames 0 1000
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3718) ->1028^done,stack=[frame={level=\"0\",addr=\"0x0000555555592bc1\",func=\"main\",file=\"oid_bug.cpp\",fullname=\"/home/hfu5fe/oid_bug/oid_bug.cpp\",line=\"23\",arch=\"i386:x86-64\"}]\n"},"seq":445}
+1: (3718) ->1028^done,stack=[frame={level="0",addr="0x0000555555592bc1",func="main",file="oid_bug.cpp",fullname="/home/hfu5fe/oid_bug/oid_bug.cpp",line="23",arch="i386:x86-64"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3718) ->(gdb)\n"},"seq":447}
+1: (3718) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3719) 1028: elapsed time 1\n"},"seq":449}
+1: (3719) 1028: elapsed time 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3726) <-1029-break-delete 1\n"},"seq":451}
+1: (3726) <-1029-break-delete 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3726) ->1029^done\n"},"seq":453}
+1: (3726) ->1029^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3726) ->(gdb)\n"},"seq":455}
+1: (3726) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3727) 1029: elapsed time 1\n"},"seq":457}
+1: (3727) 1029: elapsed time 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3728) Send Event AD7EntryPointEvent\n"},"seq":459}
+1: (3728) Send Event AD7EntryPointEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3729) <--exec-continue\n"},"seq":461}
+1: (3729) <--exec-continue
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3730) ->^running\n"},"seq":463}
+1: (3730) ->^running
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3730) ->*running,thread-id=\"all\"\n"},"seq":465}
+1: (3730) ->*running,thread-id="all"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3730) ->(gdb)\n"},"seq":467}
+1: (3730) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3731) ->=breakpoint-modified,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x0000555555592cce\",func=\"C_A_T_C_H_T_E_S_T_0()\",file=\"oid_bug.cpp\",fullname=\"/home/hfu5fe/oid_bug/oid_bug.cpp\",line=\"31\",thread-groups=[\"i1\"],times=\"1\",original-location=\"oid_bug.cpp:31\"}\n"},"seq":469}
+1: (3731) ->=breakpoint-modified,bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="0x0000555555592cce",func="C_A_T_C_H_T_E_S_T_0()",file="oid_bug.cpp",fullname="/home/hfu5fe/oid_bug/oid_bug.cpp",line="31",thread-groups=["i1"],times="1",original-location="oid_bug.cpp:31"}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3731) ->~\"\\n\"\n"},"seq":471}
+1: (3731) ->~"\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3731) ->~\"Breakpoint 2, C_A_T_C_H_T_E_S_T_0 () at oid_bug.cpp:31\\n\"\n"},"seq":473}
+1: (3731) ->~"Breakpoint 2, C_A_T_C_H_T_E_S_T_0 () at oid_bug.cpp:31\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3731) ->~\"31\\t    std::cout << sizeof(test);\\n\"\n"},"seq":475}
+1: (3731) ->~"31\t    std::cout << sizeof(test);\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3731) ->*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"2\",frame={addr=\"0x0000555555592cce\",func=\"C_A_T_C_H_T_E_S_T_0\",args=[],file=\"oid_bug.cpp\",fullname=\"/home/hfu5fe/oid_bug/oid_bug.cpp\",line=\"31\",arch=\"i386:x86-64\"},thread-id=\"1\",stopped-threads=\"all\",core=\"11\"\n"},"seq":477}
+1: (3731) ->*stopped,reason="breakpoint-hit",disp="keep",bkptno="2",frame={addr="0x0000555555592cce",func="C_A_T_C_H_T_E_S_T_0",args=[],file="oid_bug.cpp",fullname="/home/hfu5fe/oid_bug/oid_bug.cpp",line="31",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="11"
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"\n"},"seq":479}
+
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"Breakpoint 2, C_A_T_C_H_T_E_S_T_0 () at oid_bug.cpp:31\n"},"seq":481}
+Breakpoint 2, C_A_T_C_H_T_E_S_T_0 () at oid_bug.cpp:31
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"31\t    std::cout << sizeof(test);\n"},"seq":483}
+31	    std::cout << sizeof(test);
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3732) <-1030-stack-list-frames 0 1000\n"},"seq":485}
+1: (3732) <-1030-stack-list-frames 0 1000
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3968) ->1030^done,stack=[frame={level=\"0\",addr=\"0x0000555555592cce\",func=\"C_A_T_C_H_T_E_S_T_0\",file=\"oid_bug.cpp\",fullname=\"/home/hfu5fe/oid_bug/oid_bug.cpp\",line=\"31\",arch=\"i386:x86-64\"},frame={level=\"1\",addr=\"0x000055555557fdce\",func=\"Catch::TestInvokerAsFunction::invoke\",file=\"catch.hpp\",fullname=\"/home/hfu5fe/oid_bug/catch.hpp\",line=\"14332\",arch=\"i386:x86-64\"},frame={level=\"2\",addr=\"0x000055555557eff7\",func=\"Catch::TestCase::invoke\",file=\"catch.hpp\",fullname=\"/home/hfu5fe/oid_bug/catch.hpp\",line=\"14171\",arch=\"i386:x86-64\"},frame={level=\"3\",addr=\"0x0000555555579302\",func=\"Catch::RunContext::invokeActiveTestCase\",file=\"catch.hpp\",fullname=\"/home/hfu5fe/oid_bug/catch.hpp\",line=\"13027\",arch=\"i386:x86-64\"},frame={level=\"4\",addr=\"0x0000555555579027\",func=\"Catch::RunContext::runCurrentTest\",file=\"catch.hpp\",fullname=\"/home/hfu5fe/oid_bug/catch.hpp\",line=\"13000\",arch=\"i386:x86-64\"},frame={level=\"5\",addr=\"0x0000555555577a9d\",func=\"Catch::RunContext::runTest\",file=\"catch.hpp\",fullname=\"/home/hfu5fe/oid_bug/catch.hpp\",line=\"12761\",arch=\"i386:x86-64\"},frame={level=\"6\",addr=\"0x000055555557ac84\",func=\"Catch::(anonymous namespace)::TestGroup::execute\",file=\"catch.hpp\",fullname=\"/home/hfu5fe/oid_bug/catch.hpp\",line=\"13354\",arch=\"i386:x86-64\"},frame={level=\"7\",addr=\"0x000055555557c0b7\",func=\"Catch::Session::runInternal\",file=\"catch.hpp\",fullname=\"/home/hfu5fe/oid_bug/catch.hpp\",line=\"13564\",arch=\"i386:x86-64\"},frame={level=\"8\",addr=\"0x000055555557bdad\",func=\"Catch::Session::run\",file=\"catch.hpp\",fullname=\"/home/hfu5fe/oid_bug/catch.hpp\",line=\"13520\",arch=\"i386:x86-64\"},frame={level=\"9\",addr=\"0x00005555555bcbdf\",func=\"Catch::Session::run<char>\",file=\"catch.hpp\",fullname=\"/home/hfu5fe/oid_bug/catch.hpp\",line=\"13238\",arch=\"i386:x86-64\"},frame={level=\"10\",addr=\"0x0000555555592c1a\",func=\"main\",file=\"oid_bug.cpp\",fullname=\"/home/hfu5fe/oid_bug/oid_bug.cpp\",line=\"24\",arch=\"i386:x86-64\"}]\n"},"seq":487}
+1: (3968) ->1030^done,stack=[frame={level="0",addr="0x0000555555592cce",func="C_A_T_C_H_T_E_S_T_0",file="oid_bug.cpp",fullname="/home/hfu5fe/oid_bug/oid_bug.cpp",line="31",arch="i386:x86-64"},frame={level="1",addr="0x000055555557fdce",func="Catch::TestInvokerAsFunction::invoke",file="catch.hpp",fullname="/home/hfu5fe/oid_bug/catch.hpp",line="14332",arch="i386:x86-64"},frame={level="2",addr="0x000055555557eff7",func="Catch::TestCase::invoke",file="catch.hpp",fullname="/home/hfu5fe/oid_bug/catch.hpp",line="14171",arch="i386:x86-64"},frame={level="3",addr="0x0000555555579302",func="Catch::RunContext::invokeActiveTestCase",file="catch.hpp",fullname="/home/hfu5fe/oid_bug/catch.hpp",line="13027",arch="i386:x86-64"},frame={level="4",addr="0x0000555555579027",func="Catch::RunContext::runCurrentTest",file="catch.hpp",fullname="/home/hfu5fe/oid_bug/catch.hpp",line="13000",arch="i386:x86-64"},frame={level="5",addr="0x0000555555577a9d",func="Catch::RunContext::runTest",file="catch.hpp",fullname="/home/hfu5fe/oid_bug/catch.hpp",line="12761",arch="i386:x86-64"},frame={level="6",addr="0x000055555557ac84",func="Catch::(anonymous namespace)::TestGroup::execute",file="catch.hpp",fullname="/home/hfu5fe/oid_bug/catch.hpp",line="13354",arch="i386:x86-64"},frame={level="7",addr="0x000055555557c0b7",func="Catch::Session::runInternal",file="catch.hpp",fullname="/home/hfu5fe/oid_bug/catch.hpp",line="13564",arch="i386:x86-64"},frame={level="8",addr="0x000055555557bdad",func="Catch::Session::run",file="catch.hpp",fullname="/home/hfu5fe/oid_bug/catch.hpp",line="13520",arch="i386:x86-64"},frame={level="9",addr="0x00005555555bcbdf",func="Catch::Session::run<char>",file="catch.hpp",fullname="/home/hfu5fe/oid_bug/catch.hpp",line="13238",arch="i386:x86-64"},frame={level="10",addr="0x0000555555592c1a",func="main",file="oid_bug.cpp",fullname="/home/hfu5fe/oid_bug/oid_bug.cpp",line="24",arch="i386:x86-64"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3969) ->(gdb)\n"},"seq":489}
+1: (3969) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3969) 1030: elapsed time 237\n"},"seq":491}
+1: (3969) 1030: elapsed time 237
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3975) Send Event AD7MessageEvent\n"},"seq":493}
+1: (3975) Send Event AD7MessageEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"stderr","output":"Warning: Source file '/home/hfu5fe/oid_bug/oid_bug.cpp' is newer than module file '/home/hfu5fe/oid_bug/oid_bug'.\n"},"seq":495}
+Warning: Source file '/home/hfu5fe/oid_bug/oid_bug.cpp' is newer than module file '/home/hfu5fe/oid_bug/oid_bug'.
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (3980) Send Event AD7BreakpointEvent\n"},"seq":497}
+1: (3980) Send Event AD7BreakpointEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"Execute debugger commands using \"-exec <command>\", for example \"-exec info registers\" will list registers in use (when GDB is the debugger)\n"},"seq":499}
+Execute debugger commands using "-exec <command>", for example "-exec info registers" will list registers in use (when GDB is the debugger)
+--> E (stopped): {"type":"event","event":"stopped","body":{"reason":"breakpoint","threadId":31438,"allThreadsStopped":true,"source":{"name":"oid_bug.cpp","path":"/home/hfu5fe/oid_bug/oid_bug.cpp","sources":[],"checksums":[]},"line":31,"column":1},"seq":501}
+<--   C (threads-14): {"command":"threads","type":"request","seq":14}
+--> R (threads-14): {"type":"response","request_seq":14,"success":true,"command":"threads","body":{"threads":[{"id":31438,"name":"oid_bug [31438]"}]},"seq":504}
+<--   C (stackTrace-15): {"command":"stackTrace","arguments":{"threadId":31438,"startFrame":0,"levels":20},"type":"request","seq":15}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4027) <-1031-stack-list-arguments 0 0 10\n"},"seq":507}
+1: (4027) <-1031-stack-list-arguments 0 0 10
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4028) ->1031^done,stack-args=[frame={level=\"0\",args=[]},frame={level=\"1\",args=[name=\"this\"]},frame={level=\"2\",args=[name=\"this\"]},frame={level=\"3\",args=[name=\"this\"]},frame={level=\"4\",args=[name=\"this\",name=\"redirectedCout\",name=\"redirectedCerr\"]},frame={level=\"5\",args=[name=\"this\",name=\"testCase\"]},frame={level=\"6\",args=[name=\"this\"]},frame={level=\"7\",args=[name=\"this\"]},frame={level=\"8\",args=[name=\"this\"]},frame={level=\"9\",args=[name=\"this\",name=\"argc\",name=\"argv\"]},frame={level=\"10\",args=[name=\"argc\",name=\"argv\"]}]\n"},"seq":509}
+1: (4028) ->1031^done,stack-args=[frame={level="0",args=[]},frame={level="1",args=[name="this"]},frame={level="2",args=[name="this"]},frame={level="3",args=[name="this"]},frame={level="4",args=[name="this",name="redirectedCout",name="redirectedCerr"]},frame={level="5",args=[name="this",name="testCase"]},frame={level="6",args=[name="this"]},frame={level="7",args=[name="this"]},frame={level="8",args=[name="this"]},frame={level="9",args=[name="this",name="argc",name="argv"]},frame={level="10",args=[name="argc",name="argv"]}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4028) ->(gdb)\n"},"seq":511}
+1: (4028) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4029) 1031: elapsed time 1\n"},"seq":513}
+1: (4029) 1031: elapsed time 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4032) <-1032-stack-select-frame 1\n"},"seq":515}
+1: (4032) <-1032-stack-select-frame 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4032) ->1032^done\n"},"seq":517}
+1: (4032) ->1032^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4032) ->(gdb)\n"},"seq":519}
+1: (4032) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4034) 1032: elapsed time 2\n"},"seq":521}
+1: (4034) 1032: elapsed time 2
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4035) <-1033-var-create - * \"this\"\n"},"seq":523}
+1: (4035) <-1033-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4036) ->1033^done,name=\"var1\",numchild=\"2\",value=\"0x5555556c2250\",type=\"const Catch::TestInvokerAsFunction * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":525}
+1: (4036) ->1033^done,name="var1",numchild="2",value="0x5555556c2250",type="const Catch::TestInvokerAsFunction * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4036) ->(gdb)\n"},"seq":527}
+1: (4036) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4036) 1033: elapsed time 1\n"},"seq":529}
+1: (4036) 1033: elapsed time 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4037) <-1034-var-delete var1\n"},"seq":531}
+1: (4037) <-1034-var-delete var1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4038) ->1034^done,ndeleted=\"1\"\n"},"seq":533}
+1: (4038) ->1034^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4038) ->(gdb)\n"},"seq":535}
+1: (4038) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4038) 1034: elapsed time 0\n"},"seq":537}
+1: (4038) 1034: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4039) <-1035-stack-select-frame 2\n"},"seq":539}
+1: (4039) <-1035-stack-select-frame 2
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4039) ->1035^done\n"},"seq":541}
+1: (4039) ->1035^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4039) ->(gdb)\n"},"seq":543}
+1: (4039) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4039) 1035: elapsed time 0\n"},"seq":545}
+1: (4039) 1035: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4040) <-1036-var-create - * \"this\"\n"},"seq":547}
+1: (4040) <-1036-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4040) ->1036^done,name=\"var2\",numchild=\"2\",value=\"0x5555556c23e0\",type=\"const Catch::TestCase * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":549}
+1: (4040) ->1036^done,name="var2",numchild="2",value="0x5555556c23e0",type="const Catch::TestCase * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4040) ->(gdb)\n"},"seq":551}
+1: (4040) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4040) 1036: elapsed time 0\n"},"seq":553}
+1: (4040) 1036: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4041) <-1037-var-delete var2\n"},"seq":555}
+1: (4041) <-1037-var-delete var2
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4041) ->1037^done,ndeleted=\"1\"\n"},"seq":557}
+1: (4041) ->1037^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4041) ->(gdb)\n"},"seq":559}
+1: (4041) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4041) 1037: elapsed time 0\n"},"seq":561}
+1: (4041) 1037: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4041) <-1038-stack-select-frame 3\n"},"seq":563}
+1: (4041) <-1038-stack-select-frame 3
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4041) ->1038^done\n"},"seq":565}
+1: (4041) ->1038^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4042) ->(gdb)\n"},"seq":567}
+1: (4042) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4042) 1038: elapsed time 0\n"},"seq":569}
+1: (4042) 1038: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4042) <-1039-var-create - * \"this\"\n"},"seq":571}
+1: (4042) <-1039-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4042) ->1039^done,name=\"var3\",numchild=\"3\",value=\"0x7fffffffd630\",type=\"Catch::RunContext * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":573}
+1: (4042) ->1039^done,name="var3",numchild="3",value="0x7fffffffd630",type="Catch::RunContext * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4042) ->(gdb)\n"},"seq":575}
+1: (4042) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4042) 1039: elapsed time 0\n"},"seq":577}
+1: (4042) 1039: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4043) <-1040-var-delete var3\n"},"seq":579}
+1: (4043) <-1040-var-delete var3
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4043) ->1040^done,ndeleted=\"1\"\n"},"seq":581}
+1: (4043) ->1040^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4043) ->(gdb)\n"},"seq":583}
+1: (4043) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4043) 1040: elapsed time 0\n"},"seq":585}
+1: (4043) 1040: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4043) <-1041-stack-select-frame 4\n"},"seq":587}
+1: (4043) <-1041-stack-select-frame 4
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4044) ->1041^done\n"},"seq":589}
+1: (4044) ->1041^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4044) ->(gdb)\n"},"seq":591}
+1: (4044) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4044) 1041: elapsed time 0\n"},"seq":593}
+1: (4044) 1041: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4044) <-1042-var-create - * \"this\"\n"},"seq":595}
+1: (4044) <-1042-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4045) ->1042^done,name=\"var4\",numchild=\"3\",value=\"0x7fffffffd630\",type=\"Catch::RunContext * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":597}
+1: (4045) ->1042^done,name="var4",numchild="3",value="0x7fffffffd630",type="Catch::RunContext * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4045) ->(gdb)\n"},"seq":599}
+1: (4045) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4045) 1042: elapsed time 0\n"},"seq":601}
+1: (4045) 1042: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4045) <-1043-var-delete var4\n"},"seq":603}
+1: (4045) <-1043-var-delete var4
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4045) ->1043^done,ndeleted=\"1\"\n"},"seq":605}
+1: (4045) ->1043^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4049) ->(gdb)\n"},"seq":607}
+1: (4049) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4049) 1043: elapsed time 4\n"},"seq":609}
+1: (4049) 1043: elapsed time 4
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4049) <-1044-var-create - * \"redirectedCout\"\n"},"seq":611}
+1: (4049) <-1044-var-create - * "redirectedCout"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4051) ->1044^done,name=\"var5\",numchild=\"0\",value=\"\\\"\\\"\",type=\"std::string &\",thread-id=\"1\",displayhint=\"string\",dynamic=\"1\",has_more=\"0\"\n"},"seq":613}
+1: (4051) ->1044^done,name="var5",numchild="0",value="\"\"",type="std::string &",thread-id="1",displayhint="string",dynamic="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4051) ->(gdb)\n"},"seq":615}
+1: (4051) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4051) 1044: elapsed time 1\n"},"seq":617}
+1: (4051) 1044: elapsed time 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4051) <-1045-var-delete var5\n"},"seq":619}
+1: (4051) <-1045-var-delete var5
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4051) ->1045^done,ndeleted=\"1\"\n"},"seq":621}
+1: (4051) ->1045^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4051) ->(gdb)\n"},"seq":623}
+1: (4051) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4051) 1045: elapsed time 0\n"},"seq":625}
+1: (4051) 1045: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4051) <-1046-var-create - * \"redirectedCerr\"\n"},"seq":627}
+1: (4051) <-1046-var-create - * "redirectedCerr"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4052) ->1046^done,name=\"var6\",numchild=\"0\",value=\"\\\"\\\"\",type=\"std::string &\",thread-id=\"1\",displayhint=\"string\",dynamic=\"1\",has_more=\"0\"\n"},"seq":629}
+1: (4052) ->1046^done,name="var6",numchild="0",value="\"\"",type="std::string &",thread-id="1",displayhint="string",dynamic="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4052) ->(gdb)\n"},"seq":631}
+1: (4052) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4052) 1046: elapsed time 0\n"},"seq":633}
+1: (4052) 1046: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4052) <-1047-var-delete var6\n"},"seq":635}
+1: (4052) <-1047-var-delete var6
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4053) ->1047^done,ndeleted=\"1\"\n"},"seq":637}
+1: (4053) ->1047^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4053) ->(gdb)\n"},"seq":639}
+1: (4053) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4053) 1047: elapsed time 0\n"},"seq":641}
+1: (4053) 1047: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4053) <-1048-stack-select-frame 5\n"},"seq":643}
+1: (4053) <-1048-stack-select-frame 5
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4053) ->1048^done\n"},"seq":645}
+1: (4053) ->1048^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4053) ->(gdb)\n"},"seq":647}
+1: (4053) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4053) 1048: elapsed time 0\n"},"seq":649}
+1: (4053) 1048: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4053) <-1049-var-create - * \"this\"\n"},"seq":651}
+1: (4053) <-1049-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4054) ->1049^done,name=\"var7\",numchild=\"3\",value=\"0x7fffffffd630\",type=\"Catch::RunContext * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":653}
+1: (4054) ->1049^done,name="var7",numchild="3",value="0x7fffffffd630",type="Catch::RunContext * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4054) ->(gdb)\n"},"seq":655}
+1: (4054) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4054) 1049: elapsed time 0\n"},"seq":657}
+1: (4054) 1049: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4054) <-1050-var-delete var7\n"},"seq":659}
+1: (4054) <-1050-var-delete var7
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4054) ->1050^done,ndeleted=\"1\"\n"},"seq":661}
+1: (4054) ->1050^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4054) ->(gdb)\n"},"seq":663}
+1: (4054) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4054) 1050: elapsed time 0\n"},"seq":665}
+1: (4054) 1050: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4054) <-1051-var-create - * \"testCase\"\n"},"seq":667}
+1: (4054) <-1051-var-create - * "testCase"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4055) ->1051^done,name=\"var8\",numchild=\"2\",value=\"{...}\",type=\"const Catch::TestCase &\",thread-id=\"1\",has_more=\"0\"\n"},"seq":669}
+1: (4055) ->1051^done,name="var8",numchild="2",value="{...}",type="const Catch::TestCase &",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4055) ->(gdb)\n"},"seq":671}
+1: (4055) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4055) 1051: elapsed time 0\n"},"seq":673}
+1: (4055) 1051: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4055) <-1052-var-delete var8\n"},"seq":675}
+1: (4055) <-1052-var-delete var8
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4055) ->1052^done,ndeleted=\"1\"\n"},"seq":677}
+1: (4055) ->1052^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4055) ->(gdb)\n"},"seq":679}
+1: (4055) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4055) 1052: elapsed time 0\n"},"seq":681}
+1: (4055) 1052: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4056) <-1053-stack-select-frame 6\n"},"seq":683}
+1: (4056) <-1053-stack-select-frame 6
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4056) ->1053^done\n"},"seq":685}
+1: (4056) ->1053^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4056) ->(gdb)\n"},"seq":687}
+1: (4056) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4056) 1053: elapsed time 0\n"},"seq":689}
+1: (4056) 1053: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4056) <-1054-var-create - * \"this\"\n"},"seq":691}
+1: (4056) <-1054-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4057) ->1054^done,name=\"var9\",numchild=\"1\",value=\"0x7fffffffd620\",type=\"Catch::(anonymous namespace)::TestGroup * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":693}
+1: (4057) ->1054^done,name="var9",numchild="1",value="0x7fffffffd620",type="Catch::(anonymous namespace)::TestGroup * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4057) ->(gdb)\n"},"seq":695}
+1: (4057) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4057) 1054: elapsed time 0\n"},"seq":697}
+1: (4057) 1054: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4057) <-1055-var-delete var9\n"},"seq":699}
+1: (4057) <-1055-var-delete var9
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4057) ->1055^done,ndeleted=\"1\"\n"},"seq":701}
+1: (4057) ->1055^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4057) ->(gdb)\n"},"seq":703}
+1: (4057) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4057) 1055: elapsed time 0\n"},"seq":705}
+1: (4057) 1055: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4058) <-1056-stack-select-frame 7\n"},"seq":707}
+1: (4058) <-1056-stack-select-frame 7
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4058) ->1056^done\n"},"seq":709}
+1: (4058) ->1056^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4058) ->(gdb)\n"},"seq":711}
+1: (4058) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4058) 1056: elapsed time 0\n"},"seq":713}
+1: (4058) 1056: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4058) <-1057-var-create - * \"this\"\n"},"seq":715}
+1: (4058) <-1057-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4059) ->1057^done,name=\"var10\",numchild=\"2\",value=\"0x7fffffffd920\",type=\"Catch::Session * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":717}
+1: (4059) ->1057^done,name="var10",numchild="2",value="0x7fffffffd920",type="Catch::Session * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4059) ->(gdb)\n"},"seq":719}
+1: (4059) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4059) 1057: elapsed time 0\n"},"seq":721}
+1: (4059) 1057: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4059) <-1058-var-delete var10\n"},"seq":723}
+1: (4059) <-1058-var-delete var10
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4059) ->1058^done,ndeleted=\"1\"\n"},"seq":725}
+1: (4059) ->1058^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4060) ->(gdb)\n"},"seq":727}
+1: (4060) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4060) 1058: elapsed time 0\n"},"seq":729}
+1: (4060) 1058: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4060) <-1059-stack-select-frame 8\n"},"seq":731}
+1: (4060) <-1059-stack-select-frame 8
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4060) ->1059^done\n"},"seq":733}
+1: (4060) ->1059^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4060) ->(gdb)\n"},"seq":735}
+1: (4060) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4060) 1059: elapsed time 0\n"},"seq":737}
+1: (4060) 1059: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4060) <-1060-var-create - * \"this\"\n"},"seq":739}
+1: (4060) <-1060-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4060) ->1060^done,name=\"var11\",numchild=\"2\",value=\"0x7fffffffd920\",type=\"Catch::Session * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":741}
+1: (4060) ->1060^done,name="var11",numchild="2",value="0x7fffffffd920",type="Catch::Session * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4061) ->(gdb)\n"},"seq":743}
+1: (4061) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4061) 1060: elapsed time 0\n"},"seq":745}
+1: (4061) 1060: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4061) <-1061-var-delete var11\n"},"seq":747}
+1: (4061) <-1061-var-delete var11
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4061) ->1061^done,ndeleted=\"1\"\n"},"seq":749}
+1: (4061) ->1061^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4061) ->(gdb)\n"},"seq":751}
+1: (4061) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4061) 1061: elapsed time 0\n"},"seq":753}
+1: (4061) 1061: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4061) <-1062-stack-select-frame 9\n"},"seq":755}
+1: (4061) <-1062-stack-select-frame 9
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4061) ->1062^done\n"},"seq":757}
+1: (4061) ->1062^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4061) ->(gdb)\n"},"seq":759}
+1: (4061) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4061) 1062: elapsed time 0\n"},"seq":761}
+1: (4061) 1062: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4062) <-1063-var-create - * \"this\"\n"},"seq":763}
+1: (4062) <-1063-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4062) ->1063^done,name=\"var12\",numchild=\"2\",value=\"0x7fffffffd920\",type=\"Catch::Session * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":765}
+1: (4062) ->1063^done,name="var12",numchild="2",value="0x7fffffffd920",type="Catch::Session * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4062) ->(gdb)\n"},"seq":767}
+1: (4062) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4062) 1063: elapsed time 0\n"},"seq":769}
+1: (4062) 1063: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4062) <-1064-var-delete var12\n"},"seq":771}
+1: (4062) <-1064-var-delete var12
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4062) ->1064^done,ndeleted=\"1\"\n"},"seq":773}
+1: (4062) ->1064^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4063) ->(gdb)\n"},"seq":775}
+1: (4063) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4063) 1064: elapsed time 0\n"},"seq":777}
+1: (4063) 1064: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4063) <-1065-var-create - * \"argc\"\n"},"seq":779}
+1: (4063) <-1065-var-create - * "argc"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4063) ->1065^done,name=\"var13\",numchild=\"0\",value=\"1\",type=\"int\",thread-id=\"1\",has_more=\"0\"\n"},"seq":781}
+1: (4063) ->1065^done,name="var13",numchild="0",value="1",type="int",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4063) ->(gdb)\n"},"seq":783}
+1: (4063) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4063) 1065: elapsed time 0\n"},"seq":785}
+1: (4063) 1065: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4063) <-1066-var-delete var13\n"},"seq":787}
+1: (4063) <-1066-var-delete var13
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4063) ->1066^done,ndeleted=\"1\"\n"},"seq":789}
+1: (4063) ->1066^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4063) ->(gdb)\n"},"seq":791}
+1: (4063) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4063) 1066: elapsed time 0\n"},"seq":793}
+1: (4063) 1066: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4063) <-1067-var-create - * \"argv\"\n"},"seq":795}
+1: (4063) <-1067-var-create - * "argv"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4064) ->1067^done,name=\"var14\",numchild=\"1\",value=\"0x7fffffffdbc8\",type=\"const char * const *\",thread-id=\"1\",has_more=\"0\"\n"},"seq":797}
+1: (4064) ->1067^done,name="var14",numchild="1",value="0x7fffffffdbc8",type="const char * const *",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4064) ->(gdb)\n"},"seq":799}
+1: (4064) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4064) 1067: elapsed time 0\n"},"seq":801}
+1: (4064) 1067: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4064) <-1068-var-delete var14\n"},"seq":803}
+1: (4064) <-1068-var-delete var14
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4064) ->1068^done,ndeleted=\"1\"\n"},"seq":805}
+1: (4064) ->1068^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4064) ->(gdb)\n"},"seq":807}
+1: (4064) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4064) 1068: elapsed time 0\n"},"seq":809}
+1: (4064) 1068: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4064) <-1069-stack-select-frame 10\n"},"seq":811}
+1: (4064) <-1069-stack-select-frame 10
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4065) ->1069^done\n"},"seq":813}
+1: (4065) ->1069^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4065) ->(gdb)\n"},"seq":815}
+1: (4065) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4065) 1069: elapsed time 0\n"},"seq":817}
+1: (4065) 1069: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4065) <-1070-var-create - * \"argc\"\n"},"seq":819}
+1: (4065) <-1070-var-create - * "argc"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4069) ->~\"[OpenImageDebugger] Error: Could not plot variable\\n\"\n"},"seq":821}
+1: (4069) ->~"[OpenImageDebugger] Error: Could not plot variable\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"[OpenImageDebugger] Error: Could not plot variable\n"},"seq":823}
+[OpenImageDebugger] Error: Could not plot variable
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4069) ->~\"No symbol \\\"test\\\" in current context.\\n\"\n"},"seq":825}
+1: (4069) ->~"No symbol \"test\" in current context.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"No symbol \"test\" in current context.\n"},"seq":827}
+No symbol "test" in current context.
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4069) ->&\"Traceback (most recent call last):\\n\"\n"},"seq":829}
+1: (4069) ->&"Traceback (most recent call last):\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4069) ->&\"  File \\\"/home/hfu5fe/OpenImageDebugger/bin/OpenImageDebugger/oidscripts/oidwindow.py\\\", line 206, in __call__\\n    buffer_metadata = self._bridge.get_buffer_metadata(self._variable)\\n\"\n"},"seq":831}
+1: (4069) ->&"  File \"/home/hfu5fe/OpenImageDebugger/bin/OpenImageDebugger/oidscripts/oidwindow.py\", line 206, in __call__\n    buffer_metadata = self._bridge.get_buffer_metadata(self._variable)\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4069) ->&\"  File \\\"/home/hfu5fe/OpenImageDebugger/bin/OpenImageDebugger/oidscripts/debuggers/gdbbridge.py\\\", line 57, in get_buffer_metadata\\n    picked_obj = gdb.parse_and_eval(variable)\\n\"\n"},"seq":833}
+1: (4069) ->&"  File \"/home/hfu5fe/OpenImageDebugger/bin/OpenImageDebugger/oidscripts/debuggers/gdbbridge.py\", line 57, in get_buffer_metadata\n    picked_obj = gdb.parse_and_eval(variable)\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4070) ->&\"gdb.error: No symbol \\\"test\\\" in current context.\\n\"\n"},"seq":835}
+1: (4070) ->&"gdb.error: No symbol \"test\" in current context.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4271) ->1070^done,name=\"var15\",numchild=\"0\",value=\"1\",type=\"int\",thread-id=\"1\",has_more=\"0\"\n"},"seq":837}
+1: (4271) ->1070^done,name="var15",numchild="0",value="1",type="int",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4272) ->(gdb)\n"},"seq":839}
+1: (4272) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4272) 1070: elapsed time 207\n"},"seq":841}
+1: (4272) 1070: elapsed time 207
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4272) <-1071-var-delete var15\n"},"seq":843}
+1: (4272) <-1071-var-delete var15
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4273) ->1071^done,ndeleted=\"1\"\n"},"seq":845}
+1: (4273) ->1071^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4273) ->(gdb)\n"},"seq":847}
+1: (4273) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4274) 1071: elapsed time 1\n"},"seq":849}
+1: (4274) 1071: elapsed time 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4274) <-1072-var-create - * \"argv\"\n"},"seq":851}
+1: (4274) <-1072-var-create - * "argv"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4275) ->1072^done,name=\"var16\",numchild=\"1\",value=\"0x7fffffffdbc8\",type=\"char **\",thread-id=\"1\",has_more=\"0\"\n"},"seq":853}
+1: (4275) ->1072^done,name="var16",numchild="1",value="0x7fffffffdbc8",type="char **",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4276) ->(gdb)\n"},"seq":855}
+1: (4276) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4276) 1072: elapsed time 1\n"},"seq":857}
+1: (4276) 1072: elapsed time 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4276) <-1073-var-delete var16\n"},"seq":859}
+1: (4276) <-1073-var-delete var16
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4277) ->1073^done,ndeleted=\"1\"\n"},"seq":861}
+1: (4277) ->1073^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4277) ->(gdb)\n"},"seq":863}
+1: (4277) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4277) 1073: elapsed time 1\n"},"seq":865}
+1: (4277) 1073: elapsed time 1
+--> R (stackTrace-15): {"type":"response","request_seq":15,"success":true,"command":"stackTrace","body":{"stackFrames":[{"id":1000,"name":"C_A_T_C_H_T_E_S_T_0()","source":{"name":"oid_bug.cpp","path":"/home/hfu5fe/oid_bug/oid_bug.cpp","sources":[],"checksums":[]},"line":31,"column":1,"instructionPointerReference":"0x0000555555592cce"},{"id":1001,"name":"Catch::TestInvokerAsFunction::invoke(const Catch::TestInvokerAsFunction * const this)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":14332,"column":1,"instructionPointerReference":"0x000055555557fdce"},{"id":1002,"name":"Catch::TestCase::invoke(const Catch::TestCase * const this)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":14171,"column":1,"instructionPointerReference":"0x000055555557eff7"},{"id":1003,"name":"Catch::RunContext::invokeActiveTestCase(Catch::RunContext * const this)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":13027,"column":1,"instructionPointerReference":"0x0000555555579302"},{"id":1004,"name":"Catch::RunContext::runCurrentTest(Catch::RunContext * const this, std::string & redirectedCout, std::string & redirectedCerr)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":13000,"column":1,"instructionPointerReference":"0x0000555555579027"},{"id":1005,"name":"Catch::RunContext::runTest(Catch::RunContext * const this, const Catch::TestCase & testCase)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":12761,"column":1,"instructionPointerReference":"0x0000555555577a9d"},{"id":1006,"name":"Catch::(anonymous namespace)::TestGroup::execute(Catch::(anonymous namespace)::TestGroup * const this)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":13354,"column":1,"instructionPointerReference":"0x000055555557ac84"},{"id":1007,"name":"Catch::Session::runInternal(Catch::Session * const this)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":13564,"column":1,"instructionPointerReference":"0x000055555557c0b7"},{"id":1008,"name":"Catch::Session::run(Catch::Session * const this)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":13520,"column":1,"instructionPointerReference":"0x000055555557bdad"},{"id":1009,"name":"Catch::Session::run<char>(Catch::Session * const this, int argc, const char * const * argv)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":13238,"column":1,"instructionPointerReference":"0x00005555555bcbdf"},{"id":1010,"name":"main(int argc, char ** argv)","source":{"name":"oid_bug.cpp","path":"/home/hfu5fe/oid_bug/oid_bug.cpp","sources":[],"checksums":[]},"line":24,"column":1,"instructionPointerReference":"0x0000555555592c1a"}],"totalFrames":11},"seq":867}
+<--   C (stackTrace-16): {"command":"stackTrace","arguments":{"threadId":31438,"startFrame":0,"levels":20},"type":"request","seq":16}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4292) <-1074-stack-list-arguments 0 0 10\n"},"seq":870}
+1: (4292) <-1074-stack-list-arguments 0 0 10
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4292) ->1074^done,stack-args=[frame={level=\"0\",args=[]},frame={level=\"1\",args=[name=\"this\"]},frame={level=\"2\",args=[name=\"this\"]},frame={level=\"3\",args=[name=\"this\"]},frame={level=\"4\",args=[name=\"this\",name=\"redirectedCout\",name=\"redirectedCerr\"]},frame={level=\"5\",args=[name=\"this\",name=\"testCase\"]},frame={level=\"6\",args=[name=\"this\"]},frame={level=\"7\",args=[name=\"this\"]},frame={level=\"8\",args=[name=\"this\"]},frame={level=\"9\",args=[name=\"this\",name=\"argc\",name=\"argv\"]},frame={level=\"10\",args=[name=\"argc\",name=\"argv\"]}]\n"},"seq":872}
+1: (4292) ->1074^done,stack-args=[frame={level="0",args=[]},frame={level="1",args=[name="this"]},frame={level="2",args=[name="this"]},frame={level="3",args=[name="this"]},frame={level="4",args=[name="this",name="redirectedCout",name="redirectedCerr"]},frame={level="5",args=[name="this",name="testCase"]},frame={level="6",args=[name="this"]},frame={level="7",args=[name="this"]},frame={level="8",args=[name="this"]},frame={level="9",args=[name="this",name="argc",name="argv"]},frame={level="10",args=[name="argc",name="argv"]}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4292) ->(gdb)\n"},"seq":874}
+1: (4292) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4292) 1074: elapsed time 0\n"},"seq":876}
+1: (4292) 1074: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4292) <-1075-stack-select-frame 1\n"},"seq":878}
+1: (4292) <-1075-stack-select-frame 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4293) ->1075^done\n"},"seq":880}
+1: (4293) ->1075^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4293) ->(gdb)\n"},"seq":882}
+1: (4293) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4293) 1075: elapsed time 0\n"},"seq":884}
+1: (4293) 1075: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4293) <-1076-var-create - * \"this\"\n"},"seq":886}
+1: (4293) <-1076-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4294) ->1076^done,name=\"var17\",numchild=\"2\",value=\"0x5555556c2250\",type=\"const Catch::TestInvokerAsFunction * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":888}
+1: (4294) ->1076^done,name="var17",numchild="2",value="0x5555556c2250",type="const Catch::TestInvokerAsFunction * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4294) ->(gdb)\n"},"seq":890}
+1: (4294) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4294) 1076: elapsed time 0\n"},"seq":892}
+1: (4294) 1076: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4294) <-1077-var-delete var17\n"},"seq":894}
+1: (4294) <-1077-var-delete var17
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4294) ->1077^done,ndeleted=\"1\"\n"},"seq":896}
+1: (4294) ->1077^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4295) ->(gdb)\n"},"seq":898}
+1: (4295) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4295) 1077: elapsed time 0\n"},"seq":900}
+1: (4295) 1077: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4295) <-1078-stack-select-frame 2\n"},"seq":902}
+1: (4295) <-1078-stack-select-frame 2
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4295) ->1078^done\n"},"seq":904}
+1: (4295) ->1078^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4295) ->(gdb)\n"},"seq":906}
+1: (4295) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4295) 1078: elapsed time 0\n"},"seq":908}
+1: (4295) 1078: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4295) <-1079-var-create - * \"this\"\n"},"seq":910}
+1: (4295) <-1079-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4296) ->1079^done,name=\"var18\",numchild=\"2\",value=\"0x5555556c23e0\",type=\"const Catch::TestCase * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":912}
+1: (4296) ->1079^done,name="var18",numchild="2",value="0x5555556c23e0",type="const Catch::TestCase * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4296) ->(gdb)\n"},"seq":914}
+1: (4296) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4296) 1079: elapsed time 0\n"},"seq":916}
+1: (4296) 1079: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4296) <-1080-var-delete var18\n"},"seq":918}
+1: (4296) <-1080-var-delete var18
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4296) ->1080^done,ndeleted=\"1\"\n"},"seq":920}
+1: (4296) ->1080^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4296) ->(gdb)\n"},"seq":922}
+1: (4296) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4296) 1080: elapsed time 0\n"},"seq":924}
+1: (4296) 1080: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4296) <-1081-stack-select-frame 3\n"},"seq":926}
+1: (4296) <-1081-stack-select-frame 3
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4296) ->1081^done\n"},"seq":928}
+1: (4296) ->1081^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4297) ->(gdb)\n"},"seq":930}
+1: (4297) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4297) 1081: elapsed time 0\n"},"seq":932}
+1: (4297) 1081: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4297) <-1082-var-create - * \"this\"\n"},"seq":934}
+1: (4297) <-1082-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4297) ->1082^done,name=\"var19\",numchild=\"3\",value=\"0x7fffffffd630\",type=\"Catch::RunContext * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":936}
+1: (4297) ->1082^done,name="var19",numchild="3",value="0x7fffffffd630",type="Catch::RunContext * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4297) ->(gdb)\n"},"seq":938}
+1: (4297) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4297) 1082: elapsed time 0\n"},"seq":940}
+1: (4297) 1082: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4297) <-1083-var-delete var19\n"},"seq":942}
+1: (4297) <-1083-var-delete var19
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4297) ->1083^done,ndeleted=\"1\"\n"},"seq":944}
+1: (4297) ->1083^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4297) ->(gdb)\n"},"seq":946}
+1: (4297) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4297) 1083: elapsed time 0\n"},"seq":948}
+1: (4297) 1083: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4298) <-1084-stack-select-frame 4\n"},"seq":950}
+1: (4298) <-1084-stack-select-frame 4
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4298) ->1084^done\n"},"seq":952}
+1: (4298) ->1084^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4298) ->(gdb)\n"},"seq":954}
+1: (4298) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4298) 1084: elapsed time 0\n"},"seq":956}
+1: (4298) 1084: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4298) <-1085-var-create - * \"this\"\n"},"seq":958}
+1: (4298) <-1085-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4298) ->1085^done,name=\"var20\",numchild=\"3\",value=\"0x7fffffffd630\",type=\"Catch::RunContext * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":960}
+1: (4298) ->1085^done,name="var20",numchild="3",value="0x7fffffffd630",type="Catch::RunContext * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4298) ->(gdb)\n"},"seq":962}
+1: (4298) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4298) 1085: elapsed time 0\n"},"seq":964}
+1: (4298) 1085: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4299) <-1086-var-delete var20\n"},"seq":966}
+1: (4299) <-1086-var-delete var20
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4299) ->1086^done,ndeleted=\"1\"\n"},"seq":968}
+1: (4299) ->1086^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4299) ->(gdb)\n"},"seq":970}
+1: (4299) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4299) 1086: elapsed time 0\n"},"seq":972}
+1: (4299) 1086: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4299) <-1087-var-create - * \"redirectedCout\"\n"},"seq":974}
+1: (4299) <-1087-var-create - * "redirectedCout"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4299) ->1087^done,name=\"var21\",numchild=\"0\",value=\"\\\"\\\"\",type=\"std::string &\",thread-id=\"1\",displayhint=\"string\",dynamic=\"1\",has_more=\"0\"\n"},"seq":976}
+1: (4299) ->1087^done,name="var21",numchild="0",value="\"\"",type="std::string &",thread-id="1",displayhint="string",dynamic="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4299) ->(gdb)\n"},"seq":978}
+1: (4299) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4299) 1087: elapsed time 0\n"},"seq":980}
+1: (4299) 1087: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4299) <-1088-var-delete var21\n"},"seq":982}
+1: (4299) <-1088-var-delete var21
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4300) ->1088^done,ndeleted=\"1\"\n"},"seq":984}
+1: (4300) ->1088^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4300) ->(gdb)\n"},"seq":986}
+1: (4300) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4300) 1088: elapsed time 0\n"},"seq":988}
+1: (4300) 1088: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4300) <-1089-var-create - * \"redirectedCerr\"\n"},"seq":990}
+1: (4300) <-1089-var-create - * "redirectedCerr"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4300) ->1089^done,name=\"var22\",numchild=\"0\",value=\"\\\"\\\"\",type=\"std::string &\",thread-id=\"1\",displayhint=\"string\",dynamic=\"1\",has_more=\"0\"\n"},"seq":992}
+1: (4300) ->1089^done,name="var22",numchild="0",value="\"\"",type="std::string &",thread-id="1",displayhint="string",dynamic="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4300) ->(gdb)\n"},"seq":994}
+1: (4300) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4300) 1089: elapsed time 0\n"},"seq":996}
+1: (4300) 1089: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4300) <-1090-var-delete var22\n"},"seq":998}
+1: (4300) <-1090-var-delete var22
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4300) ->1090^done,ndeleted=\"1\"\n"},"seq":1000}
+1: (4300) ->1090^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4301) ->(gdb)\n"},"seq":1002}
+1: (4301) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4301) 1090: elapsed time 0\n"},"seq":1004}
+1: (4301) 1090: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4301) <-1091-stack-select-frame 5\n"},"seq":1006}
+1: (4301) <-1091-stack-select-frame 5
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4301) ->1091^done\n"},"seq":1008}
+1: (4301) ->1091^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4301) ->(gdb)\n"},"seq":1010}
+1: (4301) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4301) 1091: elapsed time 0\n"},"seq":1012}
+1: (4301) 1091: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4301) <-1092-var-create - * \"this\"\n"},"seq":1014}
+1: (4301) <-1092-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4301) ->1092^done,name=\"var23\",numchild=\"3\",value=\"0x7fffffffd630\",type=\"Catch::RunContext * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":1016}
+1: (4301) ->1092^done,name="var23",numchild="3",value="0x7fffffffd630",type="Catch::RunContext * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4302) ->(gdb)\n"},"seq":1018}
+1: (4302) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4302) 1092: elapsed time 0\n"},"seq":1020}
+1: (4302) 1092: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4302) <-1093-var-delete var23\n"},"seq":1022}
+1: (4302) <-1093-var-delete var23
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4302) ->1093^done,ndeleted=\"1\"\n"},"seq":1024}
+1: (4302) ->1093^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4302) ->(gdb)\n"},"seq":1026}
+1: (4302) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4302) 1093: elapsed time 0\n"},"seq":1028}
+1: (4302) 1093: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4302) <-1094-var-create - * \"testCase\"\n"},"seq":1030}
+1: (4302) <-1094-var-create - * "testCase"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4303) ->1094^done,name=\"var24\",numchild=\"2\",value=\"{...}\",type=\"const Catch::TestCase &\",thread-id=\"1\",has_more=\"0\"\n"},"seq":1032}
+1: (4303) ->1094^done,name="var24",numchild="2",value="{...}",type="const Catch::TestCase &",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4303) ->(gdb)\n"},"seq":1034}
+1: (4303) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4303) 1094: elapsed time 0\n"},"seq":1036}
+1: (4303) 1094: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4303) <-1095-var-delete var24\n"},"seq":1038}
+1: (4303) <-1095-var-delete var24
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4303) ->1095^done,ndeleted=\"1\"\n"},"seq":1040}
+1: (4303) ->1095^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4303) ->(gdb)\n"},"seq":1042}
+1: (4303) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4303) 1095: elapsed time 0\n"},"seq":1044}
+1: (4303) 1095: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4303) <-1096-stack-select-frame 6\n"},"seq":1046}
+1: (4303) <-1096-stack-select-frame 6
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4303) ->1096^done\n"},"seq":1048}
+1: (4303) ->1096^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4303) ->(gdb)\n"},"seq":1050}
+1: (4303) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4304) 1096: elapsed time 0\n"},"seq":1052}
+1: (4304) 1096: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4304) <-1097-var-create - * \"this\"\n"},"seq":1054}
+1: (4304) <-1097-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4304) ->1097^done,name=\"var25\",numchild=\"1\",value=\"0x7fffffffd620\",type=\"Catch::(anonymous namespace)::TestGroup * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":1056}
+1: (4304) ->1097^done,name="var25",numchild="1",value="0x7fffffffd620",type="Catch::(anonymous namespace)::TestGroup * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4304) ->(gdb)\n"},"seq":1058}
+1: (4304) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4304) 1097: elapsed time 0\n"},"seq":1060}
+1: (4304) 1097: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4304) <-1098-var-delete var25\n"},"seq":1062}
+1: (4304) <-1098-var-delete var25
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4304) ->1098^done,ndeleted=\"1\"\n"},"seq":1064}
+1: (4304) ->1098^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4305) ->(gdb)\n"},"seq":1066}
+1: (4305) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4305) 1098: elapsed time 0\n"},"seq":1068}
+1: (4305) 1098: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4305) <-1099-stack-select-frame 7\n"},"seq":1070}
+1: (4305) <-1099-stack-select-frame 7
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4305) ->1099^done\n"},"seq":1072}
+1: (4305) ->1099^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4305) ->(gdb)\n"},"seq":1074}
+1: (4305) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4305) 1099: elapsed time 0\n"},"seq":1076}
+1: (4305) 1099: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4305) <-1100-var-create - * \"this\"\n"},"seq":1078}
+1: (4305) <-1100-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4306) ->1100^done,name=\"var26\",numchild=\"2\",value=\"0x7fffffffd920\",type=\"Catch::Session * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":1080}
+1: (4306) ->1100^done,name="var26",numchild="2",value="0x7fffffffd920",type="Catch::Session * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4306) ->(gdb)\n"},"seq":1082}
+1: (4306) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4306) 1100: elapsed time 0\n"},"seq":1084}
+1: (4306) 1100: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4306) <-1101-var-delete var26\n"},"seq":1086}
+1: (4306) <-1101-var-delete var26
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4306) ->1101^done,ndeleted=\"1\"\n"},"seq":1088}
+1: (4306) ->1101^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4306) ->(gdb)\n"},"seq":1090}
+1: (4306) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4306) 1101: elapsed time 0\n"},"seq":1092}
+1: (4306) 1101: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4306) <-1102-stack-select-frame 8\n"},"seq":1094}
+1: (4306) <-1102-stack-select-frame 8
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4306) ->1102^done\n"},"seq":1096}
+1: (4306) ->1102^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4307) ->(gdb)\n"},"seq":1098}
+1: (4307) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4307) 1102: elapsed time 0\n"},"seq":1100}
+1: (4307) 1102: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4307) <-1103-var-create - * \"this\"\n"},"seq":1102}
+1: (4307) <-1103-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4307) ->1103^done,name=\"var27\",numchild=\"2\",value=\"0x7fffffffd920\",type=\"Catch::Session * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":1104}
+1: (4307) ->1103^done,name="var27",numchild="2",value="0x7fffffffd920",type="Catch::Session * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4307) ->(gdb)\n"},"seq":1106}
+1: (4307) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4307) 1103: elapsed time 0\n"},"seq":1108}
+1: (4307) 1103: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4307) <-1104-var-delete var27\n"},"seq":1110}
+1: (4307) <-1104-var-delete var27
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4307) ->1104^done,ndeleted=\"1\"\n"},"seq":1112}
+1: (4307) ->1104^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4307) ->(gdb)\n"},"seq":1114}
+1: (4307) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4307) 1104: elapsed time 0\n"},"seq":1116}
+1: (4307) 1104: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4308) <-1105-stack-select-frame 9\n"},"seq":1118}
+1: (4308) <-1105-stack-select-frame 9
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4308) ->1105^done\n"},"seq":1120}
+1: (4308) ->1105^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4308) ->(gdb)\n"},"seq":1122}
+1: (4308) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4308) 1105: elapsed time 0\n"},"seq":1124}
+1: (4308) 1105: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4308) <-1106-var-create - * \"this\"\n"},"seq":1126}
+1: (4308) <-1106-var-create - * "this"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4308) ->1106^done,name=\"var28\",numchild=\"2\",value=\"0x7fffffffd920\",type=\"Catch::Session * const\",thread-id=\"1\",has_more=\"0\"\n"},"seq":1128}
+1: (4308) ->1106^done,name="var28",numchild="2",value="0x7fffffffd920",type="Catch::Session * const",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4308) ->(gdb)\n"},"seq":1130}
+1: (4308) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4308) 1106: elapsed time 0\n"},"seq":1132}
+1: (4308) 1106: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4309) <-1107-var-delete var28\n"},"seq":1134}
+1: (4309) <-1107-var-delete var28
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4309) ->1107^done,ndeleted=\"1\"\n"},"seq":1136}
+1: (4309) ->1107^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4309) ->(gdb)\n"},"seq":1138}
+1: (4309) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4309) 1107: elapsed time 0\n"},"seq":1140}
+1: (4309) 1107: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4309) <-1108-var-create - * \"argc\"\n"},"seq":1142}
+1: (4309) <-1108-var-create - * "argc"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4309) ->1108^done,name=\"var29\",numchild=\"0\",value=\"1\",type=\"int\",thread-id=\"1\",has_more=\"0\"\n"},"seq":1144}
+1: (4309) ->1108^done,name="var29",numchild="0",value="1",type="int",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4309) ->(gdb)\n"},"seq":1146}
+1: (4309) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4309) 1108: elapsed time 0\n"},"seq":1148}
+1: (4309) 1108: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4310) <-1109-var-delete var29\n"},"seq":1150}
+1: (4310) <-1109-var-delete var29
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4310) ->1109^done,ndeleted=\"1\"\n"},"seq":1152}
+1: (4310) ->1109^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4310) ->(gdb)\n"},"seq":1154}
+1: (4310) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4310) 1109: elapsed time 0\n"},"seq":1156}
+1: (4310) 1109: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4310) <-1110-var-create - * \"argv\"\n"},"seq":1158}
+1: (4310) <-1110-var-create - * "argv"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4310) ->1110^done,name=\"var30\",numchild=\"1\",value=\"0x7fffffffdbc8\",type=\"const char * const *\",thread-id=\"1\",has_more=\"0\"\n"},"seq":1160}
+1: (4310) ->1110^done,name="var30",numchild="1",value="0x7fffffffdbc8",type="const char * const *",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4311) ->(gdb)\n"},"seq":1162}
+1: (4311) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4311) 1110: elapsed time 0\n"},"seq":1164}
+1: (4311) 1110: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4311) <-1111-var-delete var30\n"},"seq":1166}
+1: (4311) <-1111-var-delete var30
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4312) ->1111^done,ndeleted=\"1\"\n"},"seq":1168}
+1: (4312) ->1111^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4313) ->(gdb)\n"},"seq":1170}
+1: (4313) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4313) 1111: elapsed time 2\n"},"seq":1172}
+1: (4313) 1111: elapsed time 2
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4313) <-1112-stack-select-frame 10\n"},"seq":1174}
+1: (4313) <-1112-stack-select-frame 10
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4313) ->1112^done\n"},"seq":1176}
+1: (4313) ->1112^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4313) ->(gdb)\n"},"seq":1178}
+1: (4313) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4313) 1112: elapsed time 0\n"},"seq":1180}
+1: (4313) 1112: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4313) <-1113-var-create - * \"argc\"\n"},"seq":1182}
+1: (4313) <-1113-var-create - * "argc"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4314) ->1113^done,name=\"var31\",numchild=\"0\",value=\"1\",type=\"int\",thread-id=\"1\",has_more=\"0\"\n"},"seq":1184}
+1: (4314) ->1113^done,name="var31",numchild="0",value="1",type="int",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4314) ->(gdb)\n"},"seq":1186}
+1: (4314) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4314) 1113: elapsed time 0\n"},"seq":1188}
+1: (4314) 1113: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4315) <-1114-var-delete var31\n"},"seq":1190}
+1: (4315) <-1114-var-delete var31
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4315) ->1114^done,ndeleted=\"1\"\n"},"seq":1192}
+1: (4315) ->1114^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4315) ->(gdb)\n"},"seq":1194}
+1: (4315) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4315) 1114: elapsed time 0\n"},"seq":1196}
+1: (4315) 1114: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4315) <-1115-var-create - * \"argv\"\n"},"seq":1198}
+1: (4315) <-1115-var-create - * "argv"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4316) ->1115^done,name=\"var32\",numchild=\"1\",value=\"0x7fffffffdbc8\",type=\"char **\",thread-id=\"1\",has_more=\"0\"\n"},"seq":1200}
+1: (4316) ->1115^done,name="var32",numchild="1",value="0x7fffffffdbc8",type="char **",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4316) ->(gdb)\n"},"seq":1202}
+1: (4316) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4316) 1115: elapsed time 0\n"},"seq":1204}
+1: (4316) 1115: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4316) <-1116-var-delete var32\n"},"seq":1206}
+1: (4316) <-1116-var-delete var32
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4316) ->1116^done,ndeleted=\"1\"\n"},"seq":1208}
+1: (4316) ->1116^done,ndeleted="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4316) ->(gdb)\n"},"seq":1210}
+1: (4316) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4317) 1116: elapsed time 0\n"},"seq":1212}
+1: (4317) 1116: elapsed time 0
+--> R (stackTrace-16): {"type":"response","request_seq":16,"success":true,"command":"stackTrace","body":{"stackFrames":[{"id":1011,"name":"C_A_T_C_H_T_E_S_T_0()","source":{"name":"oid_bug.cpp","path":"/home/hfu5fe/oid_bug/oid_bug.cpp","sources":[],"checksums":[]},"line":31,"column":1,"instructionPointerReference":"0x0000555555592cce"},{"id":1012,"name":"Catch::TestInvokerAsFunction::invoke(const Catch::TestInvokerAsFunction * const this)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":14332,"column":1,"instructionPointerReference":"0x000055555557fdce"},{"id":1013,"name":"Catch::TestCase::invoke(const Catch::TestCase * const this)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":14171,"column":1,"instructionPointerReference":"0x000055555557eff7"},{"id":1014,"name":"Catch::RunContext::invokeActiveTestCase(Catch::RunContext * const this)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":13027,"column":1,"instructionPointerReference":"0x0000555555579302"},{"id":1015,"name":"Catch::RunContext::runCurrentTest(Catch::RunContext * const this, std::string & redirectedCout, std::string & redirectedCerr)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":13000,"column":1,"instructionPointerReference":"0x0000555555579027"},{"id":1016,"name":"Catch::RunContext::runTest(Catch::RunContext * const this, const Catch::TestCase & testCase)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":12761,"column":1,"instructionPointerReference":"0x0000555555577a9d"},{"id":1017,"name":"Catch::(anonymous namespace)::TestGroup::execute(Catch::(anonymous namespace)::TestGroup * const this)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":13354,"column":1,"instructionPointerReference":"0x000055555557ac84"},{"id":1018,"name":"Catch::Session::runInternal(Catch::Session * const this)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":13564,"column":1,"instructionPointerReference":"0x000055555557c0b7"},{"id":1019,"name":"Catch::Session::run(Catch::Session * const this)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":13520,"column":1,"instructionPointerReference":"0x000055555557bdad"},{"id":1020,"name":"Catch::Session::run<char>(Catch::Session * const this, int argc, const char * const * argv)","source":{"name":"catch.hpp","path":"/home/hfu5fe/oid_bug/catch.hpp","sources":[],"checksums":[]},"line":13238,"column":1,"instructionPointerReference":"0x00005555555bcbdf"},{"id":1021,"name":"main(int argc, char ** argv)","source":{"name":"oid_bug.cpp","path":"/home/hfu5fe/oid_bug/oid_bug.cpp","sources":[],"checksums":[]},"line":24,"column":1,"instructionPointerReference":"0x0000555555592c1a"}],"totalFrames":11},"seq":1214}
+<--   C (scopes-17): {"command":"scopes","arguments":{"frameId":1000},"type":"request","seq":17}
+--> R (scopes-17): {"type":"response","request_seq":17,"success":true,"command":"scopes","body":{"scopes":[{"presentationHint":"locals","name":"Locals","variablesReference":1000,"expensive":false},{"presentationHint":"registers","name":"Registers","variablesReference":1001,"expensive":true}]},"seq":1217}
+<--   C (variables-18): {"command":"variables","arguments":{"variablesReference":1000},"type":"request","seq":18}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4748) <-1117-stack-select-frame 0\n"},"seq":1220}
+1: (4748) <-1117-stack-select-frame 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4872) ->1117^done\n"},"seq":1222}
+1: (4872) ->1117^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4872) ->(gdb)\n"},"seq":1224}
+1: (4872) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4872) 1117: elapsed time 124\n"},"seq":1226}
+1: (4872) 1117: elapsed time 124
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4872) <-1118-stack-list-variables 0\n"},"seq":1228}
+1: (4872) <-1118-stack-list-variables 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4873) ->1118^done,variables=[{name=\"test\"}]\n"},"seq":1230}
+1: (4873) ->1118^done,variables=[{name="test"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4873) ->(gdb)\n"},"seq":1232}
+1: (4873) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4873) 1118: elapsed time 0\n"},"seq":1234}
+1: (4873) 1118: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4878) <-1119-var-create - * \"test\"\n"},"seq":1236}
+1: (4878) <-1119-var-create - * "test"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4879) ->1119^done,name=\"var33\",numchild=\"1\",value=\"{...}\",type=\"cv::Mat\",thread-id=\"1\",has_more=\"0\"\n"},"seq":1238}
+1: (4879) ->1119^done,name="var33",numchild="1",value="{...}",type="cv::Mat",thread-id="1",has_more="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4879) ->(gdb)\n"},"seq":1240}
+1: (4879) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (4880) 1119: elapsed time 1\n"},"seq":1242}
+1: (4880) 1119: elapsed time 1
+--> R (variables-18): {"type":"response","request_seq":18,"success":true,"command":"variables","body":{"variables":[{"name":"test","value":"{...}","type":"cv::Mat","evaluateName":"test","variablesReference":1002}]},"seq":1244}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (10791) ->~\"0x7fffffffd000:\\t0x00000000\\n\"\n"},"seq":1246}
+1: (10791) ->~"0x7fffffffd000:\t0x00000000\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"0x7fffffffd000:\t0x00000000\n"},"seq":1248}
+0x7fffffffd000:	0x00000000
+
