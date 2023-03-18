@@ -1,0 +1,26 @@
+local oid_test_launch = {
+  name = 'OID TEST',
+  type = 'cppdbg',
+  request = 'launch',
+  program = '/home/hfu5fe/oid_bug/oid_bug',
+  cwd = '/home/hfu5fe/oid_bug',
+  stopAtEntry = false,
+  MIMode = 'gdb',
+  externalConsole = false,
+  setupCommands = {
+    {
+      text = '-enable-pretty-printing',
+      description = 'enable pretty printing',
+      ignoreFailures = false
+    },
+    {
+      text = '-gdb-set disassembly-flavor intel',
+      ignoreFailures = true
+    },
+  },
+  logging = {
+    enableLogging = true,
+    trace = true,
+    traceResponse = true,
+  },
+}
